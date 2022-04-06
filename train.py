@@ -384,8 +384,8 @@ def main():
         model.set_grad_checkpointing(enable=True)
 
     if args.local_rank == 0:
-        _logger.info(
-            f'Model {safe_model_name(args.model)} created, param count:{sum([m.numel() for m in model.parameters()])}')
+        _logger.info('Model %s created, param count: %d' %
+                     (args.model, sum([m.numel() for m in model.parameters()])))
 
     data_config = resolve_data_config(vars(args), model=model, verbose=args.local_rank == 0)
 
@@ -489,17 +489,8 @@ def main():
         _logger.info('Scheduled epochs: {}'.format(num_epochs))
 
     # create the train and eval datasets
-    dataset_train = create_dataset(
-        args.dataset, root=args.data_dir, split=args.train_split, is_training=True,
-        class_map=args.class_map,
-        download=args.dataset_download,
-        batch_size=args.batch_size,
-        repeats=args.epoch_repeats)
-    dataset_eval = create_dataset(
-        args.dataset, root=args.data_dir, split=args.val_split, is_training=False,
-        class_map=args.class_map,
-        download=args.dataset_download,
-        batch_size=args.batch_size)
+    dataset_train = create_dataset(root=args.data_dir, dataset_type=args.train_split)
+    dataset_eval = create_dataset(root=args.data_dir, dataset_type=args.val_split)
 
     # setup mixup / cutmix
     collate_fn = None
