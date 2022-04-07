@@ -97,10 +97,10 @@ class CovidQu(data.Dataset):
             fn = lambda x: os.path.relpath(x, self.root)
         return [fn(x[0]) for x in self.samples]
 
-def create_dataset(root, dataset_type='train'):
+def create_dataset(root, dataset_type='train', greyscale=False):
     dir = os.path.join(root, dataset_type)
     if not os.path.exists(dir):
         _logger.error('{} directory does not exist at: {}'.format(dataset_type, dir))
         exit(1)
-    return CovidQu(root=dir)
+    return CovidQu(root=dir, greyscale=False)
     

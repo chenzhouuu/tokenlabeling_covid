@@ -16,10 +16,8 @@ from timm.data.distributed_sampler import OrderedDistributedSampler, RepeatAugSa
 from timm.data.random_erasing import RandomErasing
 from timm.data.mixup import FastCollateMixup
 
+from .constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 
-
-IMAGENET_DEFAULT_MEAN = (0.485, 0.456, 0.406)
-IMAGENET_DEFAULT_STD = (0.229, 0.224, 0.225)
 
 def fast_collate(batch):
     """ A fast collation function optimized for uint8 images (np array or torch) and int64 targets (labels)"""
