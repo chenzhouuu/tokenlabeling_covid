@@ -1,0 +1,39 @@
+{
+    "os": "Linux-5.10.60.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-04-07T22:25:45.739858",
+    "startedAt": "2022-04-07T22:25:44.673758",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-c",
+        "config.yaml",
+        "--model",
+        "resnet50",
+        "--sched",
+        "cosine",
+        "--epochs",
+        "200",
+        "--lr",
+        "0.05",
+        "--amp",
+        "--aa",
+        "original",
+        "--log-wandb"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/zc534012448/tokenlabeling_covid.git",
+        "commit": "5fe4c219e0915cc1869a7a13eb991bdb9542105a"
+    },
+    "email": "zc19950514@gmail.com",
+    "root": "/home/zc1995/tokenlabeling_covid",
+    "host": "DESKTOP-E19VI3Q",
+    "username": "zc1995",
+    "executable": "/usr/bin/python"
+}

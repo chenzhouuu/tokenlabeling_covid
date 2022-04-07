@@ -1,0 +1,18 @@
+Training with a single process on 1 GPUs.
+Model resnet50 created, param count: 23507907
+Traceback (most recent call last):
+  File "train.py", line 824, in <module>
+    main()
+  File "train.py", line 391, in main
+    data_config = resolve_data_config(vars(args), model=model, verbose=args.local_rank == 0)
+  File "/home/zc1995/tokenlabeling_covid/data/config.py", line 45, in resolve_data_config
+    mean = tuple(args['mean'])
+TypeError: 'float' object is not iterable
+Traceback (most recent call last):
+  File "train.py", line 824, in <module>
+    main()
+  File "train.py", line 391, in main
+    data_config = resolve_data_config(vars(args), model=model, verbose=args.local_rank == 0)
+  File "/home/zc1995/tokenlabeling_covid/data/config.py", line 45, in resolve_data_config
+    mean = tuple(args['mean'])
+TypeError: 'float' object is not iterable

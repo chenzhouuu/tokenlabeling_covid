@@ -262,8 +262,8 @@ def _parse_args():
 
 if __name__ == '__main__':
     args = _parse_args()[0]
-    for key in vars(args).keys():
-        print('{}: {}'.format(key, vars(args)[key]))
+    # for key in vars(args).keys():
+    #     print('{}: {}'.format(key, vars(args)[key]))
     model = create_model(
         args.model,
         pretrained=args.pretrained,
@@ -279,4 +279,5 @@ if __name__ == '__main__':
         checkpoint_path=args.initial_checkpoint,
         in_chans = args.chans) 
     x = torch.randn(1,1,224,224)
-    print(model(x))
+    print(model(x).shape)
+    print(model.default_cfg)

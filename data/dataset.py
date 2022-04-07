@@ -102,5 +102,5 @@ def create_dataset(root, dataset_type='train', greyscale=False):
     if not os.path.exists(dir):
         _logger.error('{} directory does not exist at: {}'.format(dataset_type, dir))
         exit(1)
-    return CovidQu(root=dir, greyscale=False)
+    return CovidQu(root=dir, greyscale=greyscale)
     

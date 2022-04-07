@@ -25,8 +25,8 @@ from timm.optim import create_optimizer_v2, optimizer_kwargs
 from timm.scheduler import create_scheduler
 from timm.utils import ApexScaler, NativeScaler
 
-from .data import create_dataset, create_loader
-from .data import resolve_data_config
+from data import create_dataset, create_loader
+from data import resolve_data_config
 
 try:
     from apex import amp
@@ -62,7 +62,7 @@ parser.add_argument('-c', '--config', default='', type=str, metavar='FILE',
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
 
 # Dataset parameters
-parser.add_argument('data_dir', metavar='DIR',
+parser.add_argument('--data_dir', metavar='DIR',
                     help='path to dataset')
 parser.add_argument('--dataset', '-d', metavar='NAME', default='',
                     help='dataset type (default: ImageFolder/ImageTar if empty)')
@@ -490,8 +490,8 @@ def main():
         _logger.info('Scheduled epochs: {}'.format(num_epochs))
 
     # create the train and eval datasets
-    dataset_train = create_dataset(root=args.data_dir, dataset_type=args.train_split)
-    dataset_eval = create_dataset(root=args.data_dir, dataset_type=args.val_split)
+    dataset_train = create_dataset(root=args.data_dir, dataset_type=args.train_split, greyscale=args.greyscale)
+    dataset_eval = create_dataset(root=args.data_dir, dataset_type=args.val_split, greyscale=args.greyscale)
 
     # setup mixup / cutmix
     collate_fn = None
