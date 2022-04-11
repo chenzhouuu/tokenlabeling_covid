@@ -1,0 +1,1212 @@
+2022-04-09 12:08:43,750 INFO    MainThread:23005 [internal.py:wandb_internal():92] W&B internal server running at pid: 23005, started at: 2022-04-09 12:08:43.750321
+2022-04-09 12:08:43,751 INFO    WriterThread:23005 [datastore.py:open_for_write():77] open: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/run-1zya9rqh.wandb
+2022-04-09 12:08:43,753 DEBUG   SenderThread:23005 [sender.py:send():235] send: header
+2022-04-09 12:08:43,753 DEBUG   SenderThread:23005 [sender.py:send():235] send: run
+2022-04-09 12:08:43,992 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: check_version
+2022-04-09 12:08:43,997 INFO    SenderThread:23005 [dir_watcher.py:__init__():169] watching files in: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files
+2022-04-09 12:08:43,997 INFO    SenderThread:23005 [sender.py:_start_run_threads():812] run started: 1zya9rqh with start time 1649520523
+2022-04-09 12:08:43,997 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:08:43,997 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:08:43,997 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: check_version
+2022-04-09 12:08:44,193 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: run_start
+2022-04-09 12:08:44,270 DEBUG   HandlerThread:23005 [meta.py:__init__():37] meta init
+2022-04-09 12:08:44,270 DEBUG   HandlerThread:23005 [meta.py:__init__():51] meta init done
+2022-04-09 12:08:44,270 DEBUG   HandlerThread:23005 [meta.py:probe():211] probe
+2022-04-09 12:08:44,281 DEBUG   HandlerThread:23005 [meta.py:_setup_git():201] setup git
+2022-04-09 12:08:44,288 DEBUG   HandlerThread:23005 [meta.py:_setup_git():208] setup git done
+2022-04-09 12:08:44,289 DEBUG   HandlerThread:23005 [meta.py:_save_pip():55] save pip
+2022-04-09 12:08:44,289 DEBUG   HandlerThread:23005 [meta.py:_save_pip():69] save pip done
+2022-04-09 12:08:44,289 DEBUG   HandlerThread:23005 [meta.py:probe():249] probe done
+2022-04-09 12:08:44,293 DEBUG   SenderThread:23005 [sender.py:send():235] send: files
+2022-04-09 12:08:44,294 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-04-09 12:08:44,297 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:08:44,297 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:08:44,507 DEBUG   SenderThread:23005 [sender.py:send():235] send: telemetry
+2022-04-09 12:08:44,836 INFO    Thread-11 :23005 [upload_job.py:push():137] Uploaded file /tmp/tmpi08qtw7lwandb/2myfn52t-wandb-metadata.json
+2022-04-09 12:08:44,997 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-metadata.json
+2022-04-09 12:08:44,998 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/requirements.txt
+2022-04-09 12:08:44,998 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:08:44,998 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:08:46,997 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:08:59,508 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:08:59,508 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:09:07,003 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:12,350 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:09:13,005 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:14,787 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:09:14,787 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:09:15,005 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/config.yaml
+2022-04-09 12:09:21,007 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:29,009 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:29,968 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:09:29,968 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:09:37,011 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:42,416 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:09:43,012 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:45,193 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:09:45,193 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:09:48,909 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:09:48,909 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:09:48,910 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:09:48,910 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:09:49,014 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:49,014 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:09:51,015 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:09:57,016 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:00,405 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:10:00,405 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:10:05,018 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:12,502 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:10:13,020 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:15,616 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:10:15,617 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:10:21,023 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:29,025 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:30,844 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:10:30,844 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:10:33,026 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:33,981 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:10:33,982 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:10:33,982 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:10:33,982 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:10:34,026 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:10:35,027 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:41,028 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:42,569 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:10:43,029 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:46,039 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:10:46,039 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:10:49,031 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:10:57,033 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:01,243 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:11:01,243 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:11:05,035 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:11,036 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:12,630 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:11:16,632 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:11:16,632 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:11:17,038 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:17,478 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:11:17,478 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:11:17,479 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:11:17,479 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:11:18,038 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:11:19,039 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:25,040 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:31,865 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:11:31,865 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:11:33,042 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:39,044 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:42,696 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:11:47,045 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:47,061 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:11:47,061 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:11:55,047 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:11:59,048 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:00,470 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:12:00,470 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:12:00,470 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:12:00,471 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:12:01,049 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:01,049 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:12:02,267 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:12:02,268 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:12:07,051 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:09,051 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:12,754 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:12:15,053 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:17,484 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:12:17,484 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:12:23,055 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:31,057 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:32,718 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:12:32,718 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:12:37,058 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:42,813 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:12:43,059 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:43,305 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:12:43,306 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:12:43,306 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:12:43,308 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:12:44,060 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:12:45,060 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:47,912 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:12:47,912 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:12:51,062 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:12:59,063 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:03,137 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:13:03,138 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:13:05,065 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:12,872 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:13:13,067 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:18,344 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:13:18,344 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:13:21,068 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:25,070 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:25,769 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:13:25,770 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:13:25,770 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:13:25,771 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:13:26,070 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:13:27,070 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:33,072 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:33,581 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:13:33,581 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:13:41,074 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:42,933 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:13:48,804 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:13:48,804 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:13:49,076 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:13:57,079 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:03,080 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:04,028 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:14:04,028 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:14:09,082 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:09,620 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:14:09,621 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:14:09,621 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:14:09,622 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:14:10,082 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:14:11,082 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:12,994 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:14:17,084 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:19,240 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:14:19,240 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:14:25,086 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:33,088 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:34,488 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:14:34,488 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:14:41,090 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:43,055 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:14:47,092 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:49,723 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:14:49,723 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:14:53,093 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:14:53,775 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:14:53,775 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:14:53,776 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:14:53,776 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:14:54,094 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:14:55,094 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:01,095 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:04,923 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:15:04,923 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:15:09,097 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:13,116 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:15:17,100 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:20,170 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:15:20,171 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:15:23,101 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:31,103 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:35,425 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:15:35,425 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:15:37,105 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:37,218 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:15:37,218 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:15:37,218 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:15:37,219 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:15:38,105 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:15:39,105 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:43,107 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:43,176 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:15:45,107 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:50,641 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:15:50,641 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:15:51,109 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:15:59,111 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:05,848 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:16:05,848 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:16:07,113 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:13,115 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:13,235 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:16:19,298 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:16:19,299 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:16:19,299 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:16:19,299 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:16:20,117 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:20,117 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:16:21,088 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:16:21,088 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:16:22,117 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:26,118 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:28,119 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:34,120 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:36,293 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:16:36,293 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:16:42,123 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:43,308 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:16:50,125 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:16:51,500 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:16:51,500 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:16:56,127 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:01,934 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:17:01,935 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:17:01,935 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:17:01,936 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:17:02,129 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:02,129 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:17:04,129 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:06,726 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:17:06,726 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:17:10,131 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:13,374 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:17:18,133 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:21,974 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:17:21,975 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:17:24,135 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:32,137 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:37,178 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:17:37,179 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:17:40,139 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:43,434 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:17:44,140 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:44,588 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:17:44,589 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:17:44,589 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:17:44,591 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:17:45,140 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:17:46,140 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:52,142 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:17:52,435 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:17:52,435 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:18:00,144 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:07,646 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:18:07,646 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:18:08,146 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:13,495 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:18:14,147 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:22,149 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:22,839 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:18:22,839 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:18:26,150 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:27,092 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:18:27,093 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:18:27,093 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:18:27,094 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:18:27,150 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:18:28,150 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:30,151 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:34,152 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:36,153 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:38,043 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:18:38,043 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:18:42,154 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:43,560 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:18:50,158 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:18:53,268 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:18:53,268 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:18:56,160 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:04,162 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:08,163 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:08,476 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:19:08,476 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:19:09,012 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:19:09,013 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:19:09,013 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:19:09,013 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:19:09,163 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:19:10,164 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:13,621 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:19:16,165 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:23,719 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:19:23,719 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:19:24,167 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:30,169 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:38,171 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:38,926 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:19:38,926 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:19:43,686 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:19:46,173 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:50,174 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:51,065 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:19:51,065 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:19:51,065 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:19:51,066 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:19:51,174 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:19:52,175 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:19:54,157 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:19:54,158 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:19:58,177 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:06,179 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:09,368 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:20:09,368 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:20:13,756 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:20:14,181 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:20,182 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:24,588 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:20:24,588 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:20:28,184 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:32,186 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:33,617 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:20:33,617 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:20:33,618 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:20:33,618 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:20:34,186 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:34,186 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:20:36,187 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:39,788 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:20:39,788 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:20:40,188 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:43,815 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:20:48,190 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:20:54,993 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:20:54,994 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:20:56,192 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:04,194 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:10,196 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:10,437 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:21:10,437 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:21:13,871 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:21:15,836 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:21:15,836 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:21:15,837 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:21:15,838 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:21:16,197 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:16,197 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:21:18,198 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:22,199 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:24,200 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:25,940 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:21:25,940 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:21:30,202 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:38,204 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:41,138 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:21:41,138 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:21:43,931 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:21:46,205 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:52,207 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:56,338 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:21:56,338 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:21:58,209 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:21:58,497 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:21:58,497 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:21:58,498 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:21:58,498 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:21:59,209 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:22:00,209 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:06,211 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:11,556 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:22:11,556 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:22:13,997 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:22:14,213 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:20,215 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:26,900 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:22:26,900 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:22:28,217 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:36,219 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:40,220 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:41,291 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:22:41,292 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:22:41,292 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:22:41,292 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:22:42,096 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:22:42,097 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:22:42,220 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:42,220 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:22:44,058 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:22:48,222 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:56,224 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:22:57,378 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:22:57,379 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:23:02,225 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:10,227 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:12,636 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:23:12,636 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:23:14,116 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:23:18,229 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:22,230 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:22,815 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:23:22,815 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:23:22,815 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:23:22,816 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:23:23,230 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:23:24,231 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:27,868 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:23:27,868 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:23:30,232 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:36,234 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:43,130 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:23:43,130 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:23:44,179 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:23:44,235 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:52,237 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:58,239 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:23:58,345 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:23:58,345 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:24:04,181 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:24:04,181 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:24:04,181 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:24:04,183 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:24:04,240 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:04,240 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:24:06,241 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:10,242 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:12,243 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:13,551 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:24:13,551 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:24:14,238 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:24:18,247 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:26,246 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:28,765 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:24:28,765 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:24:32,248 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:40,250 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:43,977 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:24:43,978 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:24:44,251 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:44,300 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:24:46,056 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:24:46,056 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:24:46,056 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:24:46,057 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:24:46,251 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:46,251 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:24:48,252 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:52,253 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:24:59,219 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:24:59,219 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:25:00,255 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:08,257 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:14,258 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:14,361 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:25:14,496 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:25:14,497 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:25:22,260 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:26,261 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:27,880 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:25:27,880 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:25:27,881 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:25:27,881 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:25:28,262 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:28,262 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:25:30,003 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:25:30,003 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:25:34,263 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:42,266 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:44,419 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:25:45,205 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:25:45,205 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:25:48,267 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:25:56,269 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:00,433 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:26:00,433 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:26:04,271 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:08,272 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:09,893 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:26:09,894 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:26:09,894 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:26:09,894 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:26:10,273 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:10,273 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:26:12,274 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:14,480 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:26:15,657 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:26:15,657 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:26:16,275 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:24,277 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:30,852 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:26:30,852 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:26:32,279 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:38,280 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:44,542 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:26:46,144 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:26:46,144 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:26:46,282 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:50,283 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:52,241 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:26:52,241 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:26:52,241 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:26:52,242 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:26:52,284 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:26:53,284 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:55,285 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:26:59,286 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:01,559 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:27:01,559 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:27:07,288 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:14,601 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:27:15,291 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:16,766 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:27:16,766 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:27:21,292 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:29,294 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:32,081 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:27:32,082 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:27:33,295 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:33,928 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:27:33,928 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:27:33,928 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:27:33,929 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:27:34,296 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:27:35,296 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:41,297 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:44,662 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:27:47,290 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:27:47,290 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:27:49,300 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:27:55,301 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:02,506 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:28:02,506 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:28:03,303 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:11,305 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:14,730 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:28:15,306 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:15,636 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:28:15,636 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:28:15,636 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:28:15,637 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:28:16,307 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:28:17,307 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:17,749 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:28:17,750 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:28:23,309 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:31,311 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:32,990 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:28:32,991 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:28:37,312 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:44,797 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:28:45,314 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:48,223 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:28:48,223 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:28:53,316 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:57,317 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:28:57,422 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:28:57,423 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:28:57,423 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:28:57,424 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:28:58,318 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:28:59,318 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:03,433 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:29:03,434 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:29:05,320 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:13,322 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:14,857 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:29:18,667 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:29:18,668 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:29:19,323 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:27,325 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:33,888 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:29:33,888 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:29:35,327 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:39,328 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:39,591 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:29:39,592 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:29:39,592 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:29:39,592 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:29:40,329 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:29:41,329 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:44,919 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:29:47,331 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:29:49,098 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:29:49,099 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:29:53,332 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:01,335 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:04,370 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:30:04,370 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:30:09,337 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:14,980 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:30:15,339 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:19,647 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:30:19,647 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:30:20,919 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:30:20,919 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:30:20,920 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:30:20,921 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:30:21,340 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:21,340 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:30:23,341 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:27,342 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:29,342 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:34,933 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:30:34,933 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:30:35,344 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:43,346 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:45,042 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:30:49,347 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:30:50,132 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:30:50,132 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:30:57,349 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:01,351 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:02,851 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:31:02,852 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:31:02,852 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:31:02,853 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:31:03,351 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:03,351 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:31:05,352 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:05,594 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:31:05,594 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:31:09,353 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:15,101 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:31:17,355 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:20,805 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:31:20,806 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:31:25,357 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:33,359 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:36,023 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:31:36,023 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:31:39,361 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:44,960 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:31:44,960 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:31:44,960 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:31:44,961 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:31:45,161 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:31:45,363 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:45,363 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:31:47,363 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:51,240 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:31:51,240 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:31:51,364 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:31:59,366 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:06,626 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:32:06,626 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:32:07,368 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:13,370 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:15,222 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:32:21,372 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:21,821 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:32:21,821 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:32:25,373 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:26,519 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:32:26,520 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:32:26,520 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:32:26,521 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:32:27,374 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:27,374 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:32:33,376 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:37,025 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:32:37,026 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:32:41,378 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:45,284 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:32:49,380 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:32:52,415 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:32:52,415 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:32:55,381 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:03,383 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:07,384 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:07,659 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:33:07,659 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:33:08,821 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:33:08,822 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:33:08,822 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:33:08,822 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:33:09,385 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:09,385 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:33:11,385 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:15,343 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:33:15,386 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:22,902 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:33:22,902 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:33:23,388 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:31,390 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:37,391 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:38,114 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:33:38,114 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:33:45,393 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:45,410 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:33:51,394 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:51,416 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:33:51,417 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:33:51,417 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:33:51,417 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:33:52,395 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:33:53,342 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:33:53,342 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:33:53,395 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:33:57,397 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:05,398 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:08,755 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:34:08,755 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:34:13,400 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:15,470 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:34:21,402 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:23,954 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:34:23,954 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:34:27,404 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:33,405 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:33,724 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:34:33,725 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:34:33,725 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:34:33,725 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:34:34,406 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:34:35,406 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:39,407 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:39,420 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:34:39,421 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:34:45,529 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:34:47,409 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:34:54,681 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:34:54,682 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:34:55,411 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:03,414 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:09,892 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:35:09,893 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:35:11,416 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:15,417 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:15,588 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:35:16,445 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:35:16,446 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:35:16,446 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:35:16,446 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:35:17,417 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:17,417 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:35:23,419 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:25,080 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:35:25,080 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:35:29,420 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:37,422 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:40,284 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:35:40,284 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:35:45,424 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:45,649 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:35:51,426 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:55,497 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:35:55,498 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:35:57,427 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:35:57,659 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:35:57,660 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:35:57,660 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:35:57,660 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:35:58,428 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:35:59,428 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:03,429 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:10,739 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:36:10,739 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:36:11,432 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:15,707 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:36:19,433 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:25,951 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:36:25,952 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:36:27,435 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:35,437 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:39,438 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:40,555 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:36:40,556 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:36:40,556 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:36:40,556 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:36:41,163 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:36:41,163 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:36:41,439 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:41,439 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:36:45,777 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:36:47,441 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:53,442 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:36:56,387 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:36:56,387 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:37:01,444 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:09,447 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:11,839 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:37:11,839 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:37:15,448 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:15,839 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:37:21,450 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:21,938 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:37:21,939 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:37:21,939 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:37:21,939 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:37:22,450 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:37:23,450 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:27,451 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:27,840 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:37:27,841 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:37:36,454 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:43,058 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:37:43,058 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:37:44,455 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:45,901 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:37:50,457 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:37:58,269 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:37:58,269 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:37:58,459 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:02,460 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:03,384 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:38:03,385 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:38:03,385 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:38:03,386 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:38:03,460 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:38:04,461 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:06,461 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:10,462 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:12,463 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:13,663 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:38:13,663 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:38:15,960 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:38:18,465 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:26,467 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:28,873 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:38:28,873 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:38:34,469 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:40,471 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:44,070 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:38:44,071 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:38:46,021 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:38:46,174 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:38:46,174 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:38:46,175 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:38:46,175 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:38:46,473 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:46,473 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:38:48,473 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:52,474 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:38:59,312 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:38:59,312 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:39:00,476 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:08,479 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:14,539 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:39:14,539 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:39:16,081 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:39:16,481 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:22,482 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:27,786 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:39:27,786 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:39:27,786 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:39:27,787 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:39:28,484 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:28,484 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:39:29,825 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:39:29,826 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:39:30,485 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:34,486 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:42,488 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:45,136 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:39:45,136 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:39:46,142 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:39:48,490 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:39:56,492 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:00,379 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:40:00,379 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:40:04,494 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:08,495 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:09,263 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:40:09,263 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:40:09,263 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:40:09,264 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:40:09,495 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:40:10,496 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:15,576 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:40:15,576 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:40:16,211 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:40:16,497 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:24,499 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:30,502 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:31,048 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:40:31,048 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:40:38,506 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:46,271 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:40:46,407 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:40:46,408 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:40:46,508 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:50,509 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:51,067 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:40:51,068 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:40:51,068 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:40:51,069 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:40:51,509 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:40:52,509 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:56,511 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:40:58,511 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:01,655 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:41:01,656 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:41:04,513 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:12,515 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:16,334 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:41:17,181 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:41:17,181 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:41:20,517 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:26,518 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:32,454 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:41:32,455 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:41:32,520 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:32,788 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:41:32,788 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:41:32,788 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:41:32,789 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:41:33,520 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:41:34,521 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:38,522 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:40,522 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:46,397 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:41:46,524 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:41:47,654 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:41:47,655 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:41:54,526 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:02,528 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:02,861 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:42:02,861 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:42:08,530 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:14,459 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:42:14,459 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:42:14,460 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:42:14,460 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:42:14,531 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:14,531 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:42:16,458 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:42:16,532 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:18,058 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:42:18,058 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:42:20,533 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:28,535 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:33,264 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:42:33,264 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:42:36,537 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:42,538 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:46,517 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:42:48,519 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:42:48,520 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:42:50,540 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:54,541 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:55,676 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:42:55,677 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:42:55,677 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:42:55,678 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:42:56,542 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:42:56,542 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:43:02,543 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:03,725 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:43:03,725 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:43:10,545 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:16,547 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:16,577 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:43:18,993 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:43:18,993 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:43:24,549 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:30,550 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:34,195 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:43:34,195 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:43:36,552 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:36,872 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:43:36,873 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:43:36,873 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:43:36,874 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:43:37,552 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:43:38,553 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:42,554 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:46,635 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:43:49,694 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:43:49,694 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:43:50,556 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:43:56,557 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:04,559 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:04,937 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:44:04,937 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:44:12,561 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:16,562 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:16,693 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:44:17,096 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:44:17,097 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:44:17,097 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:44:17,097 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:44:17,563 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:44:18,563 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:20,160 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:44:20,160 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:44:22,564 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:30,566 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:35,407 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:44:35,407 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:44:38,568 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:44,569 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:46,754 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:44:50,636 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:44:50,636 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:44:52,571 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:56,572 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:57,973 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:44:57,974 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:44:57,974 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:44:57,974 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:44:58,573 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:44:58,573 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:45:00,574 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:02,574 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:05,858 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:45:05,858 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:45:10,576 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:16,815 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:45:18,578 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:21,124 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:45:21,124 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:45:24,580 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:32,582 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:36,358 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:45:36,359 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:45:38,273 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:45:38,273 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:45:38,273 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:45:38,274 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:45:38,584 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:38,584 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:45:40,584 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:44,585 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:46,876 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:45:50,587 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:45:51,605 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:45:51,605 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:45:58,589 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:06,591 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:06,828 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:46:06,828 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:46:12,593 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:16,936 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:46:18,595 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:18,713 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:46:18,714 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:46:18,714 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:46:18,715 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:46:19,595 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:46:20,595 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:22,039 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:46:22,039 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:46:24,597 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:32,599 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:37,283 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:46:37,283 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:46:38,601 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:46,604 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:47,001 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:46:52,485 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:46:52,485 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:46:54,606 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:58,607 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:46:59,701 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:46:59,702 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:46:59,702 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:46:59,702 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:47:00,608 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:00,608 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:47:04,609 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:06,609 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:07,692 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:47:07,692 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:47:12,611 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:17,062 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:47:20,613 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:22,912 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:47:22,913 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:47:28,615 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:36,617 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:38,142 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:47:38,143 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:47:40,618 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:41,560 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:47:41,560 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:47:41,561 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:47:41,561 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:47:41,618 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:47:42,619 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:46,620 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:47,124 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:47:48,620 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:47:53,397 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:47:53,397 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:47:54,622 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:02,624 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:08,626 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:08,782 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:48:08,782 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:48:16,628 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:17,188 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:48:22,653 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:48:22,653 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:48:22,654 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:48:22,654 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:48:23,630 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:23,630 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:48:24,134 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:48:24,135 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:48:25,630 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:29,632 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:37,634 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:39,328 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:48:39,329 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:48:43,635 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:47,251 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:48:51,638 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:48:54,540 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:48:54,540 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:48:59,640 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:03,641 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:04,317 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:49:04,318 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:49:04,318 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:49:04,319 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:49:04,641 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:49:05,642 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:09,825 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:49:09,825 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:49:11,643 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:17,317 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:49:17,645 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:25,647 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:29,445 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:49:29,446 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:49:33,650 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:39,651 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:44,873 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:49:44,874 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:49:45,653 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:45,699 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:49:47,654 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:51,655 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:49:59,657 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:04,874 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:50:07,659 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:13,660 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:13,701 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:50:13,701 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:50:13,704 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:50:13,704 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:50:13,704 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:50:14,661 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:50:17,436 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:50:21,662 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:24,878 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:50:24,878 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:50:25,664 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:27,093 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:50:27,093 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:50:27,094 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:50:27,094 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:50:27,664 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:50:29,665 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:33,666 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:40,115 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:50:40,115 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:50:41,668 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:47,502 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:50:49,670 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:55,672 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:50:58,560 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:50:58,560 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:51:03,674 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:07,675 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:09,065 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:51:09,675 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:11,676 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:13,982 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:51:13,982 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:51:13,983 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:51:14,677 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:51:15,678 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:17,562 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:51:18,572 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:51:18,572 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:51:23,680 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:29,682 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:37,684 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:38,573 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:51:38,573 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:51:45,686 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:49,687 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:50,235 WARNING FileStreamThread:23005 [file_stream.py:request_with_retry():594] requests_with_retry encountered retryable exception: 408 Client Error: Request Timeout for url: https://api.wandb.ai/files/zc534012448/tokenlabeling_covid/1zya9rqh/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x7fa5f46ee2e0>>, args: ('https://api.wandb.ai/files/zc534012448/tokenlabeling_covid/1zya9rqh/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"epoch": 58, "train_loss": 0.5776723806182714, "eval_loss": 0.36477752816523606, "eval_top1": 87.55364806866953, "eval_top5": 100.0, "_timestamp": 1649523027, "_runtime": 2504, "_step": 58}']}, 'wandb-history.jsonl': {'offset': 58, 'content': ['{"epoch": 58, "train_loss": 0.5776723806182714, "eval_loss": 0.36477752816523606, "eval_top1": 87.55364806866953, "eval_top5": 100.0, "_timestamp": 1649523027, "_runtime": 2504, "_step": 58}']}, 'wandb-events.jsonl': {'offset': 81, 'content': ['{"system.cpu": 9.17, "system.memory": 75.99, "system.disk": 12.5, "system.proc.memory.availableMB": 1889.02, "system.proc.memory.rssMB": 103.76, "system.proc.memory.percent": 1.32, "system.proc.cpu.threads": 12.0, "system.network.sent": 4656458, "system.network.recv": 359503731, "_wandb": true, "_timestamp": 1649522987, "_runtime": 2464}', '{"system.cpu": 9.05, "system.memory": 76.0, "system.disk": 12.5, "system.proc.memory.availableMB": 1889.4, "system.proc.memory.rssMB": 103.76, "system.proc.memory.percent": 1.32, "system.proc.cpu.threads": 12.0, "system.network.sent": 4669816, "system.network.recv": 359541146, "_wandb": true, "_timestamp": 1649523017, "_runtime": 2494}', '{"system.cpu": 7.86, "system.memory": 75.98, "system.disk": 12.5, "system.proc.memory.availableMB": 1890.77, "system.proc.memory.rssMB": 103.76, "system.proc.memory.percent": 1.32, "system.proc.cpu.threads": 12.0, "system.network.sent": 4680439, "system.network.recv": 359575231, "_wandb": true, "_timestamp": 1649523047, "_runtime": 2524}']}, 'output.log': {'offset': 928, 'content': ['ERROR 2022-04-09T16:50:13.704562 Test: [  50/58]  Time: 0.040 (0.042)  Loss:  0.2428 (0.4203)  Acc@1: 93.7500 (84.9265)  Acc@5: 100.0000 (100.0000)\n', 'ERROR 2022-04-09T16:50:13.704562 Test: [  58/58]  Time: 0.013 (0.041)  Loss:  0.2250 (0.3927)  Acc@1: 100.0000 (86.2661)  Acc@5: 100.0000 (100.0000)\n', 'ERROR 2022-04-09T16:50:13.704760 Train: 58 [   0/233 (  0%)]  Loss: 0.4526 (0.453)  Time: 0.403s,   39.73/s  (0.403s,   39.73/s)  LR: 8.084e-05  Data: 0.080 (0.080)\n', 'ERROR 2022-04-09T16:50:13.704846 Train: 58 [  50/233 ( 22%)]  Loss: 0.5299 (0.561)  Time: 0.152s,  105.14/s  (0.155s,  103.36/s)  LR: 8.084e-05  Data: 0.003 (0.004)\n', 'ERROR 2022-04-09T16:50:15.764994 Train: 58 [ 100/233 ( 43%)]  Loss: 0.6270 (0.570)  Time: 0.157s,  102.02/s  (0.153s,  104.86/s)  LR: 8.084e-05  Data: 0.003 (0.003)\n', 'ERROR 2022-04-09T16:50:15.765050 Train: 58 [ 150/233 ( 65%)]  Loss: 0.5419 (0.571)  Time: 0.146s,  109.78/s  (0.151s,  106.11/s)  LR: 8.084e-05  Data: 0.003 (0.003)\n', 'ERROR 2022-04-09T16:50:20.846605 Train: 58 [ 200/233 ( 86%)]  Loss: 0.5958 (0.572)  Time: 0.144s,  111.18/s  (0.150s,  106.78/s)  LR: 8.084e-05  Data: 0.003 (0.003)\n', 'ERROR 2022-04-09T16:50:24.869108 Train: 58 [ 232/233 (100%)]  Loss: 0.5711 (0.578)  Time: 0.143s,  112.18/s  (0.150s,  106.94/s)  LR: 8.084e-05  Data: 0.000 (0.003)\n', 'ERROR 2022-04-09T16:50:24.869108 Test: [   0/58]  Time: 0.109 (0.109)  Loss:  0.2686 (0.2686)  Acc@1: 87.5000 (87.5000)  Acc@5: 100.0000 (100.0000)\n', 'ERROR 2022-04-09T16:50:28.877731 Test: [  50/58]  Time: 0.041 (0.043)  Loss:  0.3428 (0.3810)  Acc@1: 81.2500 (86.8873)  Acc@5: 100.0000 (100.0000)\n', 'ERROR 2022-04-09T16:50:28.877731 Test: [  58/58]  Time: 0.014 (0.042)  Loss:  0.2366 (0.3648)  Acc@1: 100.0000 (87.5536)  Acc@5: 100.0000 (100.0000)\n', 'ERROR 2022-04-09T16:50:32.880910 Current checkpoints:\n', "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-40.pth.tar', 89.37768240343348)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-44.pth.tar', 89.05579399141631)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-52.pth.tar', 88.62660944206009)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-30.pth.tar', 88.41201716738198)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-39.pth.tar', 88.30472103004291)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-53.pth.tar', 88.19742489270386)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-46.pth.tar', 87.66094420600858)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-58.pth.tar', 87.55364806866953)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-54.pth.tar', 87.44635193133047)\n", "ERROR 2022-04-09T16:50:32.880910  ('/mnt/d/output/20220409-120910-deit_base_patch16_224-224/checkpoint-32.pth.tar', 87.23175965665236)\n", 'ERROR 2022-04-09T16:50:32.880910 Train: 59 [   0/233 (  0%)]  Loss: 0.5817 (0.582)  Time: 0.500s,   31.97/s  (0.500s,   31.97/s)  LR: 8.022e-05  Data: 0.078 (0.078)\n', 'ERROR 2022-04-09T16:50:43.559309 Train: 59 [  50/233 ( 22%)]  Loss: 0.6933 (0.587)  Time: 0.145s,  110.11/s  (0.154s,  103.99/s)  LR: 8.022e-05  Data: 0.003 (0.004)\n']}}, 'dropped': 0}}
+2022-04-09 12:51:51,312 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-09 12:51:51,692 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:53,692 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:55,938 DEBUG   SenderThread:23005 [sender.py:send():235] send: stats
+2022-04-09 12:51:55,939 DEBUG   SenderThread:23005 [sender.py:send():235] send: history
+2022-04-09 12:51:55,939 DEBUG   SenderThread:23005 [sender.py:send():235] send: summary
+2022-04-09 12:51:55,940 INFO    SenderThread:23005 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:51:56,693 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/wandb-summary.json
+2022-04-09 12:51:57,693 INFO    Thread-7  :23005 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_120843-1zya9rqh/files/output.log
+2022-04-09 12:51:58,573 DEBUG   HandlerThread:23005 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:51:58,574 DEBUG   SenderThread:23005 [sender.py:send_request():249] send_request: stop_status

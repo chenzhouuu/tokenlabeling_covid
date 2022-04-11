@@ -1,0 +1,152 @@
+2022-04-08 00:30:00,246 INFO    MainThread:15723 [internal.py:wandb_internal():92] W&B internal server running at pid: 15723, started at: 2022-04-08 00:30:00.246205
+2022-04-08 00:30:00,249 DEBUG   SenderThread:15723 [sender.py:send():235] send: header
+2022-04-08 00:30:00,249 INFO    WriterThread:15723 [datastore.py:open_for_write():77] open: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/run-9eciclzo.wandb
+2022-04-08 00:30:00,249 DEBUG   SenderThread:15723 [sender.py:send():235] send: run
+2022-04-08 00:30:00,543 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: check_version
+2022-04-08 00:30:00,547 INFO    SenderThread:15723 [dir_watcher.py:__init__():169] watching files in: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files
+2022-04-08 00:30:00,547 INFO    SenderThread:15723 [sender.py:_start_run_threads():812] run started: 9eciclzo with start time 1649392199
+2022-04-08 00:30:00,547 DEBUG   SenderThread:15723 [sender.py:send():235] send: summary
+2022-04-08 00:30:00,548 INFO    SenderThread:15723 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-08 00:30:00,548 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: check_version
+2022-04-08 00:30:00,717 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: run_start
+2022-04-08 00:30:00,805 DEBUG   HandlerThread:15723 [meta.py:__init__():37] meta init
+2022-04-08 00:30:00,805 DEBUG   HandlerThread:15723 [meta.py:__init__():51] meta init done
+2022-04-08 00:30:00,805 DEBUG   HandlerThread:15723 [meta.py:probe():211] probe
+2022-04-08 00:30:00,817 DEBUG   HandlerThread:15723 [meta.py:_setup_git():201] setup git
+2022-04-08 00:30:00,830 DEBUG   HandlerThread:15723 [meta.py:_setup_git():208] setup git done
+2022-04-08 00:30:00,830 DEBUG   HandlerThread:15723 [meta.py:_save_pip():55] save pip
+2022-04-08 00:30:00,830 DEBUG   HandlerThread:15723 [meta.py:_save_pip():69] save pip done
+2022-04-08 00:30:00,830 DEBUG   HandlerThread:15723 [meta.py:probe():249] probe done
+2022-04-08 00:30:00,835 DEBUG   SenderThread:15723 [sender.py:send():235] send: files
+2022-04-08 00:30:00,835 INFO    SenderThread:15723 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-04-08 00:30:00,841 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-08 00:30:00,842 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: stop_status
+2022-04-08 00:30:01,030 DEBUG   SenderThread:15723 [sender.py:send():235] send: telemetry
+2022-04-08 00:30:01,424 INFO    Thread-11 :15723 [upload_job.py:push():137] Uploaded file /tmp/tmpm234u0b9wandb/szssjkl8-wandb-metadata.json
+2022-04-08 00:30:01,549 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/output.log
+2022-04-08 00:30:01,549 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/wandb-summary.json
+2022-04-08 00:30:01,549 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/wandb-metadata.json
+2022-04-08 00:30:01,549 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/requirements.txt
+2022-04-08 00:30:03,548 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/output.log
+2022-04-08 00:30:16,032 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-08 00:30:16,032 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: stop_status
+2022-04-08 00:30:25,554 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/output.log
+2022-04-08 00:30:28,894 DEBUG   SenderThread:15723 [sender.py:send():235] send: stats
+2022-04-08 00:30:31,328 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-08 00:30:31,328 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: stop_status
+2022-04-08 00:30:31,556 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/config.yaml
+2022-04-08 00:30:39,558 INFO    Thread-7  :15723 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/output.log
+2022-04-08 00:30:40,856 DEBUG   SenderThread:15723 [sender.py:send():235] send: telemetry
+2022-04-08 00:30:43,070 DEBUG   SenderThread:15723 [sender.py:send():235] send: exit
+2022-04-08 00:30:43,070 INFO    SenderThread:15723 [sender.py:send_exit():371] handling exit code: 1
+2022-04-08 00:30:43,070 INFO    SenderThread:15723 [sender.py:send_exit():373] handling runtime: 42
+2022-04-08 00:30:43,070 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:43,071 INFO    SenderThread:15723 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-08 00:30:43,071 INFO    SenderThread:15723 [sender.py:send_exit():379] send defer
+2022-04-08 00:30:43,071 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:43,071 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,071 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 0
+2022-04-08 00:30:43,071 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,072 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-04-08 00:30:43,072 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 1
+2022-04-08 00:30:43,072 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,072 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 1
+2022-04-08 00:30:43,128 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,128 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-04-08 00:30:43,128 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 2
+2022-04-08 00:30:43,128 DEBUG   SenderThread:15723 [sender.py:send():235] send: stats
+2022-04-08 00:30:43,128 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,129 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 2
+2022-04-08 00:30:43,129 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,129 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-04-08 00:30:43,129 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 3
+2022-04-08 00:30:43,129 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,129 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 3
+2022-04-08 00:30:43,129 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,129 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-04-08 00:30:43,129 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 4
+2022-04-08 00:30:43,130 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,130 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 4
+2022-04-08 00:30:43,130 DEBUG   SenderThread:15723 [sender.py:send():235] send: summary
+2022-04-08 00:30:43,130 INFO    SenderThread:15723 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-08 00:30:43,130 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,130 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-04-08 00:30:43,130 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 5
+2022-04-08 00:30:43,130 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,130 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 5
+2022-04-08 00:30:43,131 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,131 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-04-08 00:30:43,173 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:43,383 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 6
+2022-04-08 00:30:43,384 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:43,384 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,384 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 6
+2022-04-08 00:30:43,384 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,384 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-04-08 00:30:43,384 INFO    SenderThread:15723 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-04-08 00:30:43,485 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:43,559 INFO    SenderThread:15723 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/config.yaml
+2022-04-08 00:30:43,559 INFO    SenderThread:15723 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/output.log
+2022-04-08 00:30:43,560 INFO    SenderThread:15723 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/wandb-summary.json
+2022-04-08 00:30:43,560 INFO    SenderThread:15723 [dir_watcher.py:finish():313] scan: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files
+2022-04-08 00:30:43,560 INFO    SenderThread:15723 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/output.log output.log
+2022-04-08 00:30:43,560 INFO    SenderThread:15723 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/config.yaml config.yaml
+2022-04-08 00:30:43,560 INFO    SenderThread:15723 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/wandb-metadata.json wandb-metadata.json
+2022-04-08 00:30:43,560 INFO    SenderThread:15723 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/requirements.txt requirements.txt
+2022-04-08 00:30:43,562 INFO    SenderThread:15723 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/wandb-summary.json wandb-summary.json
+2022-04-08 00:30:43,562 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 7
+2022-04-08 00:30:43,563 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:43,565 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:43,565 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 7
+2022-04-08 00:30:43,565 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:43,565 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-04-08 00:30:43,566 INFO    SenderThread:15723 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-08 00:30:43,664 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:43,664 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:43,766 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:43,766 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:43,867 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:43,868 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:43,969 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:43,969 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:44,070 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:44,071 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:44,138 INFO    Thread-13 :15723 [upload_job.py:push():137] Uploaded file /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/config.yaml
+2022-04-08 00:30:44,139 INFO    Thread-15 :15723 [upload_job.py:push():137] Uploaded file /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/wandb-summary.json
+2022-04-08 00:30:44,147 INFO    Thread-12 :15723 [upload_job.py:push():137] Uploaded file /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/output.log
+2022-04-08 00:30:44,149 INFO    Thread-14 :15723 [upload_job.py:push():137] Uploaded file /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/files/requirements.txt
+2022-04-08 00:30:44,172 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:44,172 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:44,274 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:44,274 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:44,349 INFO    Thread-6  :15723 [sender.py:transition_state():392] send defer: 8
+2022-04-08 00:30:44,350 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:44,350 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 8
+2022-04-08 00:30:44,350 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:44,350 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-04-08 00:30:44,375 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:44,640 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 9
+2022-04-08 00:30:44,640 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:44,640 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:44,641 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 9
+2022-04-08 00:30:44,641 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:44,641 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-04-08 00:30:44,641 INFO    SenderThread:15723 [sender.py:transition_state():392] send defer: 10
+2022-04-08 00:30:44,641 DEBUG   SenderThread:15723 [sender.py:send():235] send: final
+2022-04-08 00:30:44,642 DEBUG   SenderThread:15723 [sender.py:send():235] send: footer
+2022-04-08 00:30:44,642 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: defer
+2022-04-08 00:30:44,642 INFO    HandlerThread:15723 [handler.py:handle_request_defer():164] handle defer: 10
+2022-04-08 00:30:44,642 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: defer
+2022-04-08 00:30:44,642 INFO    SenderThread:15723 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-04-08 00:30:44,742 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-08 00:30:44,742 DEBUG   SenderThread:15723 [sender.py:send_request():249] send_request: poll_exit
+2022-04-08 00:30:44,742 INFO    SenderThread:15723 [file_pusher.py:join():150] waiting for file pusher
+2022-04-08 00:30:45,355 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: sampled_history
+2022-04-08 00:30:45,356 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: get_summary
+2022-04-08 00:30:45,356 DEBUG   HandlerThread:15723 [handler.py:handle_request():141] handle_request: shutdown
+2022-04-08 00:30:45,356 INFO    HandlerThread:15723 [handler.py:finish():790] shutting down handler
+2022-04-08 00:30:45,642 INFO    WriterThread:15723 [datastore.py:close():281] close: /home/zc1995/tokenlabeling_covid/wandb/run-20220408_002959-9eciclzo/run-9eciclzo.wandb
+2022-04-08 00:30:46,253 INFO    SenderThread:15723 [sender.py:finish():1107] shutting down sender
+2022-04-08 00:30:46,253 INFO    SenderThread:15723 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-08 00:30:46,253 INFO    SenderThread:15723 [file_pusher.py:join():150] waiting for file pusher
+2022-04-08 00:30:46,299 INFO    MainThread:15723 [internal.py:handle_exit():82] Internal process exited

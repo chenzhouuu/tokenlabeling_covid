@@ -1,0 +1,72 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth)
+Converted input conv patch_embed.proj pretrained weights from 3 to 1 channel(s)
+Model swin_base_patch4_window7_224 created, param count: 86742203
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Traceback (most recent call last):
+  File "train.py", line 824, in <module>
+    main()
+  File "train.py", line 612, in main
+    train_metrics = train_one_epoch(
+  File "train.py", line 683, in train_one_epoch
+    output = model(input)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 541, in forward
+    x = self.forward_features(x)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 534, in forward_features
+    x = self.layers(x)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 413, in forward
+    x = blk(x)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 295, in forward
+    attn_windows = self.attn(x_windows, mask=self.attn_mask)  # nW*B, window_size*window_size, C
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 200, in forward
+    x = (attn @ v).transpose(1, 2).reshape(B_, N, C)
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 8.00 GiB total capacity; 5.74 GiB already allocated; 0 bytes free; 5.85 GiB reserved in total by PyTorch)
+Traceback (most recent call last):
+  File "train.py", line 824, in <module>
+    main()
+  File "train.py", line 612, in main
+    train_metrics = train_one_epoch(
+  File "train.py", line 683, in train_one_epoch
+    output = model(input)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 541, in forward
+    x = self.forward_features(x)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 534, in forward_features
+    x = self.layers(x)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 413, in forward
+    x = blk(x)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 295, in forward
+    attn_windows = self.attn(x_windows, mask=self.attn_mask)  # nW*B, window_size*window_size, C
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/swin_transformer.py", line 200, in forward
+    x = (attn @ v).transpose(1, 2).reshape(B_, N, C)
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 8.00 GiB total capacity; 5.74 GiB already allocated; 0 bytes free; 5.85 GiB reserved in total by PyTorch)

@@ -1,0 +1,9 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://download.pytorch.org/models/vgg19-dcbb9e9d.pth)
+Converted input conv features.0 pretrained weights from 3 to 1 channel(s)
+Model vgg19 created, param count: 139581379
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bilinear
+	mean: (0.5128,)
+	std: (0.2236,)

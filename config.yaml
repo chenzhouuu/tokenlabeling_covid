@@ -2,12 +2,13 @@
 tokenlabeling: False
 
 # data path
-data_dir: '/mnt/d/Data/COVID_QU/Infection Segmentation Data/Infection Segmentation Data'
+data_dir: '/mnt/d/Data/COVID_QU/Infection_Segmentation_Data/Infection_Segmentation_Data'
 # Dataset parameters
 train_split: 'Train'
 val_split: 'Val'
 
 # Model parameters
+# pretrained: True
 initial_checkpoint: ''
 resume: ''
 greyscale: True
@@ -19,7 +20,7 @@ crop_pct: 0.875
 gp:
 mean: [0.5128]
 std: [0.2236]
-
-
-
-
+batch_size: 16
+weight_decay: 1e-5
+output: '/mnt/d/output'
+scale: [0.5, 1.0]

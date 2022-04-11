@@ -1,0 +1,9 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_base_patch16_224-b5f2ef4d.pth)
+Converted input conv patch_embed.proj pretrained weights from 3 to 1 channel(s)
+Model deit_base_patch16_224 created, param count: 85407747
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)

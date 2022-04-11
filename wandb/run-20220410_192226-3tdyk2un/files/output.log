@@ -1,0 +1,29 @@
+Training with a single process on 1 GPUs.
+Traceback (most recent call last):
+  File "train.py", line 824, in <module>
+    main()
+  File "train.py", line 366, in main
+    model = create_model(
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/factory.py", line 74, in create_model
+    model = create_fn(pretrained=pretrained, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/vgg.py", line 254, in vgg19
+    return _create_vgg('vgg19', pretrained=pretrained, **model_args)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/vgg.py", line 184, in _create_vgg
+    model = build_model_with_cfg(
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/helpers.py", line 453, in build_model_with_cfg
+    model = model_cls(**kwargs) if model_cfg is None else model_cls(cfg=model_cfg, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'drop_path_rate'
+Traceback (most recent call last):
+  File "train.py", line 824, in <module>
+    main()
+  File "train.py", line 366, in main
+    model = create_model(
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/factory.py", line 74, in create_model
+    model = create_fn(pretrained=pretrained, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/vgg.py", line 254, in vgg19
+    return _create_vgg('vgg19', pretrained=pretrained, **model_args)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/vgg.py", line 184, in _create_vgg
+    model = build_model_with_cfg(
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/models/helpers.py", line 453, in build_model_with_cfg
+    model = model_cls(**kwargs) if model_cfg is None else model_cls(cfg=model_cfg, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'drop_path_rate'

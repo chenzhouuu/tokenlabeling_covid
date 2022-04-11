@@ -1,0 +1,13 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1_0-14fe96d1.pth)
+Converted input conv conv1 pretrained weights from 3 to 1 channel(s)
+Model resnet50 created, param count: 23507907
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+ERROR: Train directory does not exist at: /mnt/d/Data/COVID_QU/Infection Segmentation Data/Infection Segmentation Data/Train

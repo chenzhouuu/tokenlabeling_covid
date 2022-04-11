@@ -1,5 +1,6 @@
 """ Covid dataset with lung and infection masks
 """
+from lib2to3.pytree import convert
 from time import sleep
 import torch.utils.data as data
 import os
@@ -70,13 +71,17 @@ class CovidQu(data.Dataset):
 
     def __getitem__(self, index):
         path, target = self.samples[index]
+        lung_mask_path = path.replace('images', 'lung masks')
+        infection_mask_path = path.replace('images', 'infection masks')
         
         img = open(path, 'rb').read() if self.load_bytes else Image.open(path).convert(self.greyscale)
+        lung_mask = open(lung_mask_path, 'rb').read() if self.load_bytes else Image.open(lung_mask_path).convert('L')
+        infection_mask = open(infection_mask_path, 'rb').read() if self.load_bytes else Image.open(infection_mask_path).convert('L')
 
         if self.transform is not None:
-            img = self.transform(img)
+            img, lung_mask, infection_mask = self.transform(img, lung_mask, infection_mask)
 
-        return img, target
+        return img, target, lung_mask, infection_mask
 
     def __len__(self):
         return len(self.samples)

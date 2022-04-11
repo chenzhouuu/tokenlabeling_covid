@@ -1,0 +1,125 @@
+2022-04-09 12:58:52,196 INFO    MainThread:15151 [internal.py:wandb_internal():92] W&B internal server running at pid: 15151, started at: 2022-04-09 12:58:52.195620
+2022-04-09 12:58:52,202 DEBUG   SenderThread:15151 [sender.py:send():235] send: header
+2022-04-09 12:58:52,202 INFO    WriterThread:15151 [datastore.py:open_for_write():77] open: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/run-2ehi670d.wandb
+2022-04-09 12:58:52,202 DEBUG   SenderThread:15151 [sender.py:send():235] send: run
+2022-04-09 12:59:04,273 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: check_version
+2022-04-09 12:59:04,280 INFO    SenderThread:15151 [dir_watcher.py:__init__():169] watching files in: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files
+2022-04-09 12:59:04,280 INFO    SenderThread:15151 [sender.py:_start_run_threads():812] run started: 2ehi670d with start time 1649523530
+2022-04-09 12:59:04,280 DEBUG   SenderThread:15151 [sender.py:send():235] send: summary
+2022-04-09 12:59:04,280 INFO    SenderThread:15151 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-09 12:59:04,280 DEBUG   SenderThread:15151 [sender.py:send_request():249] send_request: check_version
+2022-04-09 12:59:04,577 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: run_start
+2022-04-09 12:59:04,666 DEBUG   HandlerThread:15151 [meta.py:__init__():37] meta init
+2022-04-09 12:59:04,666 DEBUG   HandlerThread:15151 [meta.py:__init__():51] meta init done
+2022-04-09 12:59:04,666 DEBUG   HandlerThread:15151 [meta.py:probe():211] probe
+2022-04-09 12:59:04,676 DEBUG   HandlerThread:15151 [meta.py:_setup_git():201] setup git
+2022-04-09 12:59:04,686 DEBUG   HandlerThread:15151 [meta.py:_setup_git():208] setup git done
+2022-04-09 12:59:04,686 DEBUG   HandlerThread:15151 [meta.py:_save_pip():55] save pip
+2022-04-09 12:59:04,687 DEBUG   HandlerThread:15151 [meta.py:_save_pip():69] save pip done
+2022-04-09 12:59:04,687 DEBUG   HandlerThread:15151 [meta.py:probe():249] probe done
+2022-04-09 12:59:04,690 DEBUG   SenderThread:15151 [sender.py:send():235] send: files
+2022-04-09 12:59:04,691 INFO    SenderThread:15151 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-04-09 12:59:04,695 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 12:59:04,695 DEBUG   SenderThread:15151 [sender.py:send_request():249] send_request: stop_status
+2022-04-09 12:59:05,281 INFO    Thread-7  :15151 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/wandb-summary.json
+2022-04-09 12:59:05,281 INFO    Thread-7  :15151 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/requirements.txt
+2022-04-09 12:59:05,281 INFO    Thread-7  :15151 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/wandb-metadata.json
+2022-04-09 12:59:05,282 INFO    Thread-7  :15151 [dir_watcher.py:_on_file_created():217] file/dir created: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/output.log
+2022-04-09 12:59:07,283 INFO    Thread-7  :15151 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/output.log
+2022-04-09 12:59:51,549 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 13:00:16,446 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 13:00:43,103 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 13:01:04,882 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 13:01:23,974 DEBUG   HandlerThread:15151 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-09 13:01:26,939 ERROR   Thread-11 :15151 [internal_api.py:upload_file():1631] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/zc534012448/tokenlabeling_covid/2ehi670d/wandb-metadata.json?Expires=1649609949&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=jgwmmlbY8axiy3BDXk40Bb3o2U0KBEqY%2FDDpApWTEzG%2B1pyh38gjCVRk80CMzrogP8jIXdfZmwQmO%2BEiyfXE8ERPTGDfUspJzbfuL5gbfX1BNtqVAfaq3BojePuxMDusSJVjzRQp695OxdQ9gl01HyQdF2vAF%2BYyEMvAjCbhpvcHk1k%2B6tzKTOfJ1XNzsQIeDFgTFoHtc9vQX0uiDmVsFKRka27aIa%2FTic%2FyDaINX4v7iG%2B2KR0tc%2BbnkFZd39lp6YOXSi6Thw1MoJeRzzb1T5RaLgg550nzCNh0sdacx6MeomCy5DLw%2B9ckBTXo94Y4YpCe%2Bo%2BOGqyPNrPJp57JbQ%3D%3D: ('Connection aborted.', OSError("(32, 'EPIPE')"))
+2022-04-09 13:01:26,939 ERROR   Thread-11 :15151 [internal_api.py:upload_file():1633] upload_file request headers: {'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1243'}
+2022-04-09 13:01:26,939 ERROR   Thread-11 :15151 [internal_api.py:upload_file():1635] upload_file response body: 
+2022-04-09 13:01:29,773 WARNING MainThread:15151 [internal.py:is_dead():387] Internal process exiting, parent pid 15030 disappeared
+2022-04-09 13:01:29,773 ERROR   MainThread:15151 [internal.py:wandb_internal():151] Internal process shutdown.
+2022-04-09 13:01:29,796 INFO    WriterThread:15151 [datastore.py:close():281] close: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/run-2ehi670d.wandb
+2022-04-09 13:01:29,867 INFO    HandlerThread:15151 [handler.py:finish():790] shutting down handler
+2022-04-09 13:01:41,372 INFO    Thread-11 :15151 [upload_job.py:push():137] Uploaded file /tmp/tmpuyegbkf1wandb/3l8j2pzv-wandb-metadata.json
+2022-04-09 13:01:44,685 ERROR   SenderThread:15151 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1622, in _raise_ssl_error
+    raise WantReadError()
+OpenSSL.SSL.WantReadError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 366, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 488, in wrap_socket
+    raise timeout("select timed out")
+socket.timeout: select timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 703, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 379, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 330, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zc1995/.local/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 141, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2022-04-09 13:02:47,050 INFO    SenderThread:15151 [sender.py:finish():1107] shutting down sender
+2022-04-09 13:02:47,050 INFO    SenderThread:15151 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-04-09 13:02:47,878 INFO    SenderThread:15151 [dir_watcher.py:finish():313] scan: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files
+2022-04-09 13:02:47,878 INFO    SenderThread:15151 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/output.log output.log
+2022-04-09 13:02:47,879 INFO    SenderThread:15151 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/config.yaml config.yaml
+2022-04-09 13:02:47,879 INFO    SenderThread:15151 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/wandb-metadata.json wandb-metadata.json
+2022-04-09 13:02:47,879 INFO    SenderThread:15151 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/requirements.txt requirements.txt
+2022-04-09 13:02:47,881 INFO    SenderThread:15151 [dir_watcher.py:finish():327] scan save: /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/wandb-summary.json wandb-summary.json
+2022-04-09 13:02:47,884 INFO    SenderThread:15151 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-09 13:02:47,884 INFO    SenderThread:15151 [file_pusher.py:join():150] waiting for file pusher
+2022-04-09 13:03:54,096 ERROR   Thread-12 :15151 [internal_api.py:upload_file():1631] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/zc534012448/tokenlabeling_covid/2ehi670d/output.log?Expires=1649610182&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=TV0%2FP%2BX%2Fxh7v39ac67raAl9ZG6Qsq1EiWeu4vuDMLa45yMhAL4ZPheONI0kABtKZL3X1LqI1XQcooEFFo1XK4OXUeXLTb51R15pHOXjD28YPlV%2FgEw%2ByNxyUBYWNdbAvPNnrFFPR9V%2Fx4bIOjetkoYg1ygSARuofl3uqCOHzTv7PdNMeX%2F3nGtUn3FEy0PISJY6yr0TnOTYaQ%2BW1tS4aLY7qRaGE4fCzU%2FGIgbYKv9%2FPYEiQkgaopclGAtFTo4ye03jnxxblYSW5u89ekB7qP%2F%2F1Equ437VHvglPuAQbVrHWNuaNH3DjYaLeQNApu15IZqVeU0ailyXPmmsaIWsJxA%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2022-04-09 13:03:54,096 ERROR   Thread-12 :15151 [internal_api.py:upload_file():1633] upload_file request headers: {'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '433'}
+2022-04-09 13:03:54,096 ERROR   Thread-12 :15151 [internal_api.py:upload_file():1635] upload_file response body: 
+2022-04-09 13:03:57,675 INFO    Thread-12 :15151 [upload_job.py:push():137] Uploaded file /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/output.log
+2022-04-09 13:03:58,255 INFO    Thread-14 :15151 [upload_job.py:push():137] Uploaded file /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/requirements.txt
+2022-04-09 13:08:19,692 INFO    Thread-13 :15151 [upload_job.py:push():137] Uploaded file /home/zc1995/tokenlabeling_covid/wandb/run-20220409_125850-2ehi670d/files/config.yaml
