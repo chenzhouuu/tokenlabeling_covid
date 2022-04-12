@@ -6,6 +6,7 @@ import torch.utils.data as data
 import os
 import torch
 import logging
+import numpy as np
 
 import re
 
@@ -14,6 +15,25 @@ from PIL import Image
 _logger = logging.getLogger('xray dataset')
 
 IMG_EXTENSIONS = ['.png', '.jpg', '.jpeg']
+
+def get_scores(mask, patch_size=(16, 16)):
+    if isinstance(mask, Image.Image):
+        w, h = mask.size
+        assert w % patch_size[1] == 0 and h % patch_size[0] == 0
+        patch_h = h // patch_size[1]
+        patch_w = w // patch_size[0]
+        mask_arr = np.array(mask)
+        mask_patch = mask_arr.reshape(patch_h,patch_size[1],patch_w,patch_size[0]) # (14, 16, 14, 16)
+        mask_patch = mask_patch.swapaxes(1,2) # (14, 14, 16, 16)
+        scores = mask_patch.reshape(*mask_patch.shape[:-2], -1).mean(-1) # (14, 14)
+        
+        return scores.flatten(), mask_patch
+
+    else:
+        raise TypeError("{} type not supported".format(type(mask)))
+
+
+
 
 def natural_key(string_):
     """See http://www.codinghorror.com/blog/archives/001018.html"""
@@ -54,7 +74,9 @@ class CovidQu(data.Dataset):
         root,
         load_bytes=False,
         transform=None,
-        greyscale=False
+        greyscale=False,
+        mask_type=None,
+        patch_size=(16,16)
     ):
         class_to_idx = None
         images, class_to_idx = load_images_and_masks(root, class_to_idx=None)
@@ -68,20 +90,26 @@ class CovidQu(data.Dataset):
         self.load_bytes = load_bytes
         self.transform = transform
         self.greyscale = 'L' if greyscale else 'RGB'
+        self.mask_type = mask_type
+        self.patch_size = patch_size
 
     def __getitem__(self, index):
         path, target = self.samples[index]
-        lung_mask_path = path.replace('images', 'lung masks')
-        infection_mask_path = path.replace('images', 'infection masks')
         
         img = open(path, 'rb').read() if self.load_bytes else Image.open(path).convert(self.greyscale)
-        lung_mask = open(lung_mask_path, 'rb').read() if self.load_bytes else Image.open(lung_mask_path).convert('L')
-        infection_mask = open(infection_mask_path, 'rb').read() if self.load_bytes else Image.open(infection_mask_path).convert('L')
+        if self.mask_type is not None:
+            mask_path = path.replace('images', self.mask_type)
+            mask = open(mask_path, 'rb').read() if self.load_bytes else Image.open(mask_path).convert('L')
+           
+            if self.transform is not None:
+                img, mask = self.transform(img, mask)
 
-        if self.transform is not None:
-            img, lung_mask, infection_mask = self.transform(img, lung_mask, infection_mask)
+            scores = get_scores(mask, patch_size=self.patch_size)
+            target = np.concatenate([np.array([target]), scores])
+        else:
+            img = self.transform(img)
+        return img, target
 
-        return img, target, lung_mask, infection_mask
 
     def __len__(self):
         return len(self.samples)
@@ -102,10 +130,10 @@ class CovidQu(data.Dataset):
             fn = lambda x: os.path.relpath(x, self.root)
         return [fn(x[0]) for x in self.samples]
 
-def create_dataset(root, dataset_type='train', greyscale=False):
+def create_dataset(root, dataset_type='train', greyscale=False, mask_type=None, patch_size=(16, 16)):
     dir = os.path.join(root, dataset_type)
     if not os.path.exists(dir):
         _logger.error('{} directory does not exist at: {}'.format(dataset_type, dir))
         exit(1)
-    return CovidQu(root=dir, greyscale=greyscale)
+    return CovidQu(root=dir, greyscale=greyscale, mask_type=mask_type, patch_size=patch_size)
     
