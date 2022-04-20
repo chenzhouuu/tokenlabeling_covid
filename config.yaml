@@ -23,6 +23,6 @@ std: [0.2236]
 batch_size: 16
 weight_decay: 1e-5
 output: '/mnt/d/output'
-scale: [0.5, 1.0]
-mask_type: None # 
+scale: [0.8, 1.0]
+# mask_type: None # 
 patch_size: [16, 16]

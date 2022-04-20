@@ -1,0 +1,68 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://download.pytorch.org/models/vgg19-dcbb9e9d.pth)
+Converted input conv features.0 pretrained weights from 3 to 1 channel(s)
+Model vgg19 created, param count: 139581379
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bilinear
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Traceback (most recent call last):
+  File "train.py", line 834, in <module>
+    main()
+  File "train.py", line 622, in main
+    train_metrics = train_one_epoch(
+  File "train.py", line 682, in train_one_epoch
+    for batch_idx, (input, target) in enumerate(loader):
+  File "/home/zc1995/tokenlabeling_covid/data/loader.py", line 106, in __iter__
+    for next_input, next_target in self.loader:
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+UnboundLocalError: Caught UnboundLocalError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/zc1995/tokenlabeling_covid/data/dataset.py", line 112, in __getitem__
+    return img, target, scores
+UnboundLocalError: local variable 'scores' referenced before assignment
+Traceback (most recent call last):
+  File "train.py", line 834, in <module>
+    main()
+  File "train.py", line 622, in main
+    train_metrics = train_one_epoch(
+  File "train.py", line 682, in train_one_epoch
+    for batch_idx, (input, target) in enumerate(loader):
+  File "/home/zc1995/tokenlabeling_covid/data/loader.py", line 106, in __iter__
+    for next_input, next_target in self.loader:
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+UnboundLocalError: Caught UnboundLocalError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/zc1995/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/zc1995/tokenlabeling_covid/data/dataset.py", line 112, in __getitem__
+    return img, target, scores
+UnboundLocalError: local variable 'scores' referenced before assignment

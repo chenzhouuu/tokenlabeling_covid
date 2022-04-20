@@ -542,7 +542,7 @@ class AutoAugment:
     def __init__(self, policy):
         self.policy = policy
 
-    def __call__(self, img):
+    def __call__(self, img, mask):
         sub_policy = random.choice(self.policy)
         for op in sub_policy:
             img, mask = op(img, mask)
@@ -670,7 +670,7 @@ class RandAugment:
         self.num_layers = num_layers
         self.choice_weights = choice_weights
 
-    def __call__(self, img):
+    def __call__(self, img, mask):
         # no replacement when using weighted choice
         ops = np.random.choice(
             self.ops, self.num_layers, replace=self.choice_weights is None, p=self.choice_weights)

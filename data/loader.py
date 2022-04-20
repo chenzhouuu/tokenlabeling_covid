@@ -1,7 +1,7 @@
 """ Loader Factory, Fast Collate, CUDA Prefetcher
 Prefetcher and Fast Collate inspired by NVIDIA APEX example at
 https://github.com/NVIDIA/apex/commit/d5e2bb4bdeedd27b1dfaf5bb2b24d6c000dee9be#diff-cf86c282ff7fba81fad27a559379d5bf
-Revised from 2019, Ross Wightman
+Revised from Ross Wightman
 """
 
 import random
@@ -12,6 +12,7 @@ import numpy as np
 from itertools import repeat
 
 from timm.data import create_transform
+from .mask_transforms_factory import create_mask_transform
 from timm.data.distributed_sampler import OrderedDistributedSampler, RepeatAugSampler
 from timm.data.random_erasing import RandomErasing
 from timm.data.mixup import FastCollateMixup
@@ -194,12 +195,17 @@ def create_loader(
         use_multi_epochs_loader=False,
         persistent_workers=True,
         worker_seeding='all',
+        use_mask=False,
 ):
     re_num_splits = 0
     if re_split:
         # apply RE to second half of batch if no aug split otherwise line up with aug split
         re_num_splits = num_aug_splits or 2
-    dataset.transform = create_transform(
+    if use_mask:
+        transform_fn = create_mask_transform
+    else:
+        transform_fn = create_transform
+    dataset.transform = transform_fn(
         input_size,
         is_training=is_training,
         use_prefetcher=use_prefetcher,
@@ -214,7 +220,6 @@ def create_loader(
         mean=mean,
         std=std,
         crop_pct=crop_pct,
-        tf_preprocessing=tf_preprocessing,
         re_prob=re_prob,
         re_mode=re_mode,
         re_count=re_count,

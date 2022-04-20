@@ -1,0 +1,37 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://download.pytorch.org/models/vgg19-dcbb9e9d.pth)
+Converted input conv features.0 pretrained weights from 3 to 1 channel(s)
+Model vgg19 created, param count: 139581379
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bilinear
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Train: 0 [   0/233 (  0%)]  Loss: 1.145 (1.14)  Time: 2.546s,    6.28/s  (2.546s,    6.28/s)  LR: 1.000e-04  Data: 0.592 (0.592)
+Train: 0 [  50/233 ( 22%)]  Loss: 1.089 (0.984)  Time: 0.142s,  112.80/s  (0.189s,   84.77/s)  LR: 1.000e-04  Data: 0.002 (0.014)
+Train: 0 [ 100/233 ( 43%)]  Loss: 0.7889 (0.975)  Time: 0.142s,  112.46/s  (0.166s,   96.50/s)  LR: 1.000e-04  Data: 0.002 (0.008)
+Train: 0 [ 150/233 ( 65%)]  Loss: 0.9045 (0.946)  Time: 0.142s,  113.04/s  (0.158s,  101.18/s)  LR: 1.000e-04  Data: 0.002 (0.006)
+Train: 0 [ 200/233 ( 86%)]  Loss: 0.7028 (0.924)  Time: 0.142s,  112.52/s  (0.154s,  103.68/s)  LR: 1.000e-04  Data: 0.002 (0.005)
+Train: 0 [ 232/233 (100%)]  Loss: 1.009 (0.917)  Time: 0.141s,  113.78/s  (0.153s,  104.72/s)  LR: 1.000e-04  Data: 0.000 (0.005)
+Test: [   0/58]  Time: 0.365 (0.365)  Loss:  1.0049 (1.0049)  Acc@1: 56.2500 (56.2500)  Acc@5: 100.0000 (100.0000)
+Test: [  50/58]  Time: 0.034 (0.045)  Loss:  0.3391 (0.8337)  Acc@1: 93.7500 (62.1324)  Acc@5: 100.0000 (100.0000)
+Test: [  58/58]  Time: 0.441 (0.050)  Loss:  0.4072 (0.7677)  Acc@1: 100.0000 (66.6309)  Acc@5: 100.0000 (100.0000)
+Traceback (most recent call last):
+  File "train.py", line 834, in <module>
+    main()
+  File "train.py", line 653, in main
+    best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/utils/checkpoint_saver.py", line 78, in save_checkpoint
+    os.link(last_save_path, save_path)
+FileExistsError: [Errno 17] File exists: '/mnt/d/output/vgg19_mixup/last.pth.tar' -> '/mnt/d/output/vgg19_mixup/checkpoint-0.pth.tar'
+Traceback (most recent call last):
+  File "train.py", line 834, in <module>
+    main()
+  File "train.py", line 653, in main
+    best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/utils/checkpoint_saver.py", line 78, in save_checkpoint
+    os.link(last_save_path, save_path)
+FileExistsError: [Errno 17] File exists: '/mnt/d/output/vgg19_mixup/last.pth.tar' -> '/mnt/d/output/vgg19_mixup/checkpoint-0.pth.tar'

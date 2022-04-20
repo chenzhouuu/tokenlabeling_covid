@@ -1,0 +1,48 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://download.pytorch.org/models/vgg19-dcbb9e9d.pth)
+Converted input conv features.0 pretrained weights from 3 to 1 channel(s)
+Model vgg19 created, param count: 139581379
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bilinear
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Train: 0 [   0/233 (  0%)]  Loss: 1.145 (1.14)  Time: 1.942s,    8.24/s  (1.942s,    8.24/s)  LR: 1.000e-04  Data: 0.288 (0.288)
+Train: 0 [  50/233 ( 22%)]  Loss: 0.9714 (1.02)  Time: 0.142s,  112.62/s  (0.176s,   90.66/s)  LR: 1.000e-04  Data: 0.003 (0.008)
+Train: 0 [ 100/233 ( 43%)]  Loss: 0.8121 (0.973)  Time: 0.142s,  113.02/s  (0.159s,  100.33/s)  LR: 1.000e-04  Data: 0.002 (0.005)
+Train: 0 [ 150/233 ( 65%)]  Loss: 0.7822 (0.942)  Time: 0.142s,  112.76/s  (0.154s,  104.07/s)  LR: 1.000e-04  Data: 0.003 (0.004)
+Train: 0 [ 200/233 ( 86%)]  Loss: 0.7008 (0.921)  Time: 0.142s,  112.46/s  (0.151s,  106.00/s)  LR: 1.000e-04  Data: 0.002 (0.004)
+Train: 0 [ 232/233 (100%)]  Loss: 1.093 (0.912)  Time: 0.140s,  114.12/s  (0.150s,  106.88/s)  LR: 1.000e-04  Data: 0.000 (0.004)
+Test: [   0/58]  Time: 0.463 (0.463)  Loss:  1.8545 (1.8545)  Acc@1: 25.0000 (25.0000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/58]  Time: 0.034 (0.047)  Loss:  0.0616 (1.4799)  Acc@1: 100.0000 (41.7892)  Acc@5: 100.0000 (100.0000)
+Test: [  58/58]  Time: 0.444 (0.052)  Loss:  0.1283 (1.3021)  Acc@1: 100.0000 (49.0343)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/d/output/vgg19_mixup/checkpoint-0.pth.tar', 49.0343347639485)
+Train: 1 [   0/233 (  0%)]  Loss: 1.045 (1.04)  Time: 1.018s,   15.71/s  (1.018s,   15.71/s)  LR: 1.000e-04  Data: 0.524 (0.524)
+Train: 1 [  50/233 ( 22%)]  Loss: 0.7707 (0.825)  Time: 0.142s,  112.72/s  (0.159s,  100.37/s)  LR: 1.000e-04  Data: 0.003 (0.013)
+Train: 1 [ 100/233 ( 43%)]  Loss: 0.7248 (0.855)  Time: 0.141s,  113.64/s  (0.151s,  106.07/s)  LR: 1.000e-04  Data: 0.002 (0.008)
+Train: 1 [ 150/233 ( 65%)]  Loss: 1.006 (0.845)  Time: 0.141s,  113.16/s  (0.148s,  108.12/s)  LR: 1.000e-04  Data: 0.002 (0.006)
+Train: 1 [ 200/233 ( 86%)]  Loss: 0.6605 (0.836)  Time: 0.142s,  112.53/s  (0.146s,  109.22/s)  LR: 1.000e-04  Data: 0.003 (0.005)
+Train: 1 [ 232/233 (100%)]  Loss: 1.147 (0.829)  Time: 0.139s,  114.78/s  (0.146s,  109.65/s)  LR: 1.000e-04  Data: 0.000 (0.005)
+Test: [   0/58]  Time: 0.333 (0.333)  Loss:  0.6245 (0.6245)  Acc@1: 68.7500 (68.7500)  Acc@5: 100.0000 (100.0000)
+Test: [  50/58]  Time: 0.033 (0.043)  Loss:  0.3718 (0.6866)  Acc@1: 87.5000 (70.4657)  Acc@5: 100.0000 (100.0000)
+Test: [  58/58]  Time: 0.012 (0.041)  Loss:  0.2678 (0.6306)  Acc@1: 75.0000 (73.1760)  Acc@5: 100.0000 (100.0000)
+Traceback (most recent call last):
+  File "train.py", line 834, in <module>
+    main()
+  File "train.py", line 653, in main
+    best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/utils/checkpoint_saver.py", line 78, in save_checkpoint
+    os.link(last_save_path, save_path)
+FileExistsError: [Errno 17] File exists: '/mnt/d/output/vgg19_mixup/last.pth.tar' -> '/mnt/d/output/vgg19_mixup/checkpoint-1.pth.tar'
+Traceback (most recent call last):
+  File "train.py", line 834, in <module>
+    main()
+  File "train.py", line 653, in main
+    best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/utils/checkpoint_saver.py", line 78, in save_checkpoint
+    os.link(last_save_path, save_path)
+FileExistsError: [Errno 17] File exists: '/mnt/d/output/vgg19_mixup/last.pth.tar' -> '/mnt/d/output/vgg19_mixup/checkpoint-1.pth.tar'

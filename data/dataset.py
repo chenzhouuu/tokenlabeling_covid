@@ -27,7 +27,7 @@ def get_scores(mask, patch_size=(16, 16)):
         mask_patch = mask_patch.swapaxes(1,2) # (14, 14, 16, 16)
         scores = mask_patch.reshape(*mask_patch.shape[:-2], -1).mean(-1) # (14, 14)
         
-        return scores.flatten(), mask_patch
+        return scores.flatten()
 
     else:
         raise TypeError("{} type not supported".format(type(mask)))
@@ -105,10 +105,12 @@ class CovidQu(data.Dataset):
                 img, mask = self.transform(img, mask)
 
             scores = get_scores(mask, patch_size=self.patch_size)
-            target = np.concatenate([np.array([target]), scores])
+            # target = np.concatenate([np.array([target]), scores])
+            return img, target, scores
         else:
-            img = self.transform(img)
-        return img, target
+            if self.transform is not None:
+                img = self.transform(img)
+            return img, target
 
 
     def __len__(self):

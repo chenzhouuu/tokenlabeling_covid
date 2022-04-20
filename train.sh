@@ -17,4 +17,5 @@
 
 python train.py -c config.yaml --model vgg19 --opt AdamW --sched cosine \
 --epochs 200 --lr 1e-4 --amp --remode pixel --reprob 0.6 --resplit \
---split-bn  --dist-bn reduce --log-wandb --pretrained --experiment vgg19_mixup --drop 0.1 
+--split-bn  --dist-bn reduce --log-wandb --pretrained --experiment vgg19_mixup --drop 0.1 --mixup 0.2 \
+--aa rand-m9-mstd0.5-inc1

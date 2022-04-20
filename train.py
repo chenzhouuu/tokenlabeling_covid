@@ -114,7 +114,8 @@ parser.add_argument('--fuser', default='', type=str,
                     help="Select jit fuser. One of ('', 'te', 'old', 'nvfuser')")
 parser.add_argument('--grad-checkpointing', action='store_true', default=False,
                     help='Enable gradient checkpointing through model blocks/stages')
-
+parser.add_argument('--mask-type', type=str, default=None, metavar='N',
+                    help='Decide use which mask type')
 # Optimizer parameters
 parser.add_argument('--opt', default='sgd', type=str, metavar='OPTIMIZER',
                     help='Optimizer (default: "sgd"')
@@ -494,7 +495,7 @@ def main():
                                     greyscale=args.greyscale, mask_type=args.mask_type,
                                     patch_size=args.patch_size)
     dataset_eval = create_dataset(root=args.data_dir, dataset_type=args.val_split, 
-                                    greyscale=args.greyscale, mask_type=args.mask_type,
+                                    greyscale=args.greyscale, mask_type=None,
                                     patch_size=args.patch_size)
 
     # setup mixup / cutmix
@@ -520,6 +521,9 @@ def main():
     train_interpolation = args.train_interpolation
     if args.no_aug or not train_interpolation:
         train_interpolation = data_config['interpolation']
+    use_mask = False
+    if args.mask_type is not None:
+        use_mask =True
     loader_train = create_loader(
         dataset_train,
         input_size=data_config['input_size'],
@@ -548,6 +552,7 @@ def main():
         pin_memory=args.pin_mem,
         use_multi_epochs_loader=args.use_multi_epochs_loader,
         worker_seeding=args.worker_seeding,
+        use_mask=use_mask,
     )
 
     loader_eval = create_loader(
@@ -563,6 +568,7 @@ def main():
         distributed=args.distributed,
         crop_pct=data_config['crop_pct'],
         pin_memory=args.pin_mem,
+        use_mask=False
     )
 
     # setup loss function

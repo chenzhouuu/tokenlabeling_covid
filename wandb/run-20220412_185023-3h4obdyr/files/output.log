@@ -1,0 +1,24 @@
+Training with a single process on 1 GPUs.
+Loading pretrained weights from url (https://download.pytorch.org/models/vgg19-dcbb9e9d.pth)
+Converted input conv features.0 pretrained weights from 3 to 1 channel(s)
+Model vgg19 created, param count: 139581379
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bilinear
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Traceback (most recent call last):
+  File "train.py", line 831, in <module>
+    main()
+  File "train.py", line 552, in main
+    use_mask=use_mask
+NameError: name 'use_mask' is not defined
+Traceback (most recent call last):
+  File "train.py", line 831, in <module>
+    main()
+  File "train.py", line 552, in main
+    use_mask=use_mask
+NameError: name 'use_mask' is not defined
