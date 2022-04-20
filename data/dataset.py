@@ -25,7 +25,7 @@ def get_scores(mask, patch_size=(16, 16)):
         mask_arr = np.array(mask)
         mask_patch = mask_arr.reshape(patch_h,patch_size[1],patch_w,patch_size[0]) # (14, 16, 14, 16)
         mask_patch = mask_patch.swapaxes(1,2) # (14, 14, 16, 16)
-        scores = mask_patch.reshape(*mask_patch.shape[:-2], -1).mean(-1) # (14, 14)
+        scores = mask_patch.reshape(*mask_patch.shape[:-2], -1).mean(-1) / 255. # (14, 14)
         
         return scores.flatten()
 

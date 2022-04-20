@@ -27,6 +27,7 @@ from timm.utils import ApexScaler, NativeScaler
 
 from data import create_dataset, create_loader
 from data import resolve_data_config
+import models
 
 try:
     from apex import amp
@@ -116,6 +117,8 @@ parser.add_argument('--grad-checkpointing', action='store_true', default=False,
                     help='Enable gradient checkpointing through model blocks/stages')
 parser.add_argument('--mask-type', type=str, default=None, metavar='N',
                     help='Decide use which mask type')
+parser.add_argument('--mix-token', action='store_true', default=False,
+                    help='Using mix token augmentation')
 # Optimizer parameters
 parser.add_argument('--opt', default='sgd', type=str, metavar='OPTIMIZER',
                     help='Optimizer (default: "sgd"')
@@ -382,6 +385,8 @@ def main():
         assert hasattr(model, 'num_classes'), 'Model must have `num_classes` attr if not set on cmd line/config.'
         args.num_classes = model.num_classes  # FIXME handle model default vs config num_classes more elegantly
 
+    if args.mix_token and args.mask_type is not None:
+        model.mix_token = True
     if args.grad_checkpointing:
         model.set_grad_checkpointing(enable=True)
 

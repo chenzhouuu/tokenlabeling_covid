@@ -40,6 +40,10 @@ class ComposeWithMask(torchvision.transforms.Compose):
             elif type(t).__name__ == 'RandomResizedCropAndInterpolationWithMask':
                 # should ensure RandomResizedCropWithCoords after all trabsformation
                 img, mask = t(img, mask)
+            # elif type(t).__name__ == 'ToTensor':
+            #     img, mask = t(img, mask)
+            # elif type(t).__name__ == 'Normalize':
+            #     img, mask = t(img, mask)
             else:
                 img = t(img)
         return img, mask

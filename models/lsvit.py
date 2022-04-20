@@ -22,10 +22,10 @@ def _cfg(url='', **kwargs):
     }
 
 default_cfgs = {
-    'LV_ViT_Tiny': _cfg(),
-    'LV_ViT': _cfg(),
-    'LV_ViT_Medium': _cfg(crop_pct=1.0),
-    'LV_ViT_Large': _cfg(crop_pct=1.0),
+    'LS_ViT_Tiny': _cfg(),
+    'LS_ViT': _cfg(),
+    'LS_ViT_Medium': _cfg(crop_pct=1.0),
+    'LS_ViT_Large': _cfg(crop_pct=1.0),
 }
 
 def get_block(block_type, **kargs):
@@ -73,7 +73,7 @@ def get_dpr(drop_path_rate,depth,drop_path_decay='linear'):
     return dpr
 
 
-class LV_ViT(nn.Module):
+class LS_ViT(nn.Module):
     """ Vision Transformer with tricks
     Arguements:
         p_emb: different conv based position embedding (default: 4 layer conv)
@@ -85,13 +85,14 @@ class LV_ViT(nn.Module):
     def __init__(self, img_size=224, patch_size=16, in_chans=3, num_classes=1000, embed_dim=768, depth=12,
                  num_heads=12, mlp_ratio=4., qkv_bias=False, qk_scale=None, drop_rate=0., attn_drop_rate=0.,
                  drop_path_rate=0., drop_path_decay='linear', hybrid_backbone=None, norm_layer=nn.LayerNorm, p_emb='4_2', head_dim = None,
-                 skip_lam = 1.0,order=None, mix_token=False, return_dense=False, training=False):
+                 skip_lam = 1.0,order=None, mix_token=False, beta=0.5):
         super().__init__()
         self.num_classes = num_classes
         self.num_features = self.embed_dim = embed_dim  # num_features for consistency with other models
         self.output_dim = embed_dim if num_classes==0 else num_classes
         self.mix_token = mix_token
-        self.training = training
+        # self.training = training
+        self.beta = beta
         if hybrid_backbone is not None:
             self.patch_embed = HybridEmbed(
                 hybrid_backbone, img_size=img_size, in_chans=in_chans, embed_dim=embed_dim)
@@ -129,7 +130,7 @@ class LV_ViT(nn.Module):
 
         self.norm = norm_layer(embed_dim)
         self.head = nn.Linear(embed_dim, num_classes) if num_classes > 0 else nn.Identity()
-        self.mask_head = nn.Linear(embed_dim, num_classes) if num_classes > 0 else nn.Identity()
+        self.mask_head = nn.Linear(embed_dim, 2) if num_classes > 0 else nn.Identity()
         
 
         trunc_normal_(self.pos_embed, std=.02)
@@ -198,66 +199,63 @@ class LV_ViT(nn.Module):
         x = x.flatten(2).transpose(1, 2)
         x = self.forward_tokens(x)
         x_cls = self.head(x[:,0])
+        x_mask = self.mask_head(x[:,1:])
 
-
-        if self.return_dense:
-            x_aux = self.aux_head(x[:,1:])
-            if not self.training:
-                return x_cls+0.5*x_aux.max(1)[0]
-
-            # recover the mixed part
-            if self.mix_token and self.training:
-                x_aux = x_aux.reshape(x_aux.shape[0],patch_h, patch_w,x_aux.shape[-1])
-                temp_x = x_aux.clone()
-                temp_x[:, bbx1:bbx2, bby1:bby2, :] = x_aux.flip(0)[:, bbx1:bbx2, bby1:bby2, :]
-                x_aux = temp_x
-                x_aux = x_aux.reshape(x_aux.shape[0],patch_h*patch_w,x_aux.shape[-1])
-
-            return x_cls, x_aux, (bbx1, bby1, bbx2, bby2)
+        if self.training:
+            if self.mix_token:
+                x_mask = x_mask.reshape(x_mask.shape[0],patch_h, patch_w,x_mask.shape[-1])
+                temp_x = x_mask.clone()
+                temp_x[:, bbx1:bbx2, bby1:bby2, :] = x_mask.flip(0)[:, bbx1:bbx2, bby1:bby2, :]
+                x_mask = temp_x
+                x_mask = x_mask.reshape(x_mask.shape[0],patch_h*patch_w,x_mask.shape[-1])
+                
+            return x_cls, x_mask, (bbx1, bby1, bbx2, bby2)
+        
         return x_cls
+        
 
 @register_model
 def vit(pretrained=False, **kwargs):
-    model = LV_ViT(patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3.,
+    model = LS_ViT(patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3.,
         p_emb=1, **kwargs)
-    model.default_cfg = default_cfgs['LV_ViT']
+    model.default_cfg = default_cfgs['LS_ViT']
     return model
 
 
 @register_model
-def lvvit(pretrained=False, **kwargs):
-    model = LV_ViT(patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3.,
+def lsvit(pretrained=False, **kwargs):
+    model = LS_ViT(patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3.,
         p_emb='4_2',skip_lam=2., **kwargs)
-    model.default_cfg = default_cfgs['LV_ViT']
+    model.default_cfg = default_cfgs['LS_ViT']
     return model
 
 @register_model
-def lvvit_t(pretrained=False, **kwargs):
-    model = LV_ViT(patch_size=16, embed_dim=240, depth=12, num_heads=4, mlp_ratio=3.,
+def lsvit_t(pretrained=False, **kwargs):
+    model = LS_ViT(patch_size=16, embed_dim=240, depth=12, num_heads=4, mlp_ratio=3.,
         p_emb='4_2',skip_lam=1., return_dense=True,mix_token=True, **kwargs)
-    model.default_cfg = default_cfgs['LV_ViT_Tiny']
+    model.default_cfg = default_cfgs['LS_ViT_Tiny']
     return model
 
 
 @register_model
-def lvvit_s(pretrained=False, **kwargs):
-    model = LV_ViT(patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3.,
+def lsvit_s(pretrained=False, **kwargs):
+    model = LS_ViT(patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3.,
         p_emb='4_2',skip_lam=2., return_dense=True,mix_token=True, **kwargs)
-    model.default_cfg = default_cfgs['LV_ViT']
+    model.default_cfg = default_cfgs['LS_ViT']
     return model
 
 @register_model
-def lvvit_m(pretrained=False, **kwargs):
-    model = LV_ViT(patch_size=16, embed_dim=512, depth=20, num_heads=8, mlp_ratio=3.,
+def lsvit_m(pretrained=False, **kwargs):
+    model = LS_ViT(patch_size=16, embed_dim=512, depth=20, num_heads=8, mlp_ratio=3.,
         p_emb='4_2',skip_lam=2., return_dense=True,mix_token=True, **kwargs)
-    model.default_cfg = default_cfgs['LV_ViT_Medium']
+    model.default_cfg = default_cfgs['LS_ViT_Medium']
     return model
 
 
 @register_model
-def lvvit_l(pretrained=False, **kwargs):
+def lsvit_l(pretrained=False, **kwargs):
     order = ['tr']*24 # this will override depth, can also be set as None
-    model = LV_ViT(patch_size=16, embed_dim=768,depth=24, num_heads=12, mlp_ratio=3.,
+    model = LS_ViT(patch_size=16, embed_dim=768,depth=24, num_heads=12, mlp_ratio=3.,
         p_emb='4_2_128',skip_lam=3., return_dense=True,mix_token=True, order=order, **kwargs)
-    model.default_cfg = default_cfgs['LV_ViT_Large']
+    model.default_cfg = default_cfgs['LS_ViT_Large']
     return model
