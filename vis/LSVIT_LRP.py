@@ -15,7 +15,7 @@ def _cfg(url='', **kwargs):
     return {
         'url': url,
         'num_classes': 1000, 'input_size': (3, 224, 224), 'pool_size': None,
-        'crop_pct': .9, 'interpolation': 'bicubic',
+        'crop_pct': .875, 'interpolation': 'bicubic',
         'first_conv': 'patch_embed.proj', 'classifier': 'head',
         **kwargs
     }
@@ -24,17 +24,17 @@ def _cfg(url='', **kwargs):
 default_cfgs = {
     # patch models
     'lvvit_base_patch16_224': _cfg(
-        url='https://github.com/zihangJiang/TokenLabeling/releases/download/1.0/lvvit_m-56M-224-84.0.pth.tar',
+        url='https://drive.google.com/uc?export=download&id=1BfZ8bMaIofJ6fjHocTxG_T-HA2Wj9CJh',
         mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225),
     ),
-    'lvvit_small_patch16_224': _cfg(
-        url='https://github.com/zihangJiang/TokenLabeling/releases/download/1.0/lvvit_s-26M-224-83.3.pth.tar',
-        mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225),
-    ),
-    'lvvit_small_patch16_384': _cfg(
-        url='https://github.com/zihangJiang/TokenLabeling/releases/download/1.0/lvvit_s-26M-384-84.4.pth.tar',
-        mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225),
-    )
+    # 'lvvit_small_patch16_224': _cfg(
+    #     url='https://github.com/zihangJiang/TokenLabeling/releases/download/1.0/lvvit_s-26M-224-83.3.pth.tar',
+    #     mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225),
+    # ),
+    # 'lvvit_small_patch16_384': _cfg(
+    #     url='https://github.com/zihangJiang/TokenLabeling/releases/download/1.0/lvvit_s-26M-384-84.4.pth.tar',
+    #     mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225),
+    # )
 }
 
 def compute_rollout_attention(all_layer_matrices, start_layer=0):
@@ -466,24 +466,24 @@ def _conv_filter(state_dict, patch_size=16):
 
 def lvvit_base_patch16_224(pretrained=False, **kwargs):
     model = VisionTransformer(
-        patch_size=16, embed_dim=512, depth=20, num_heads=8, mlp_ratio=3, qkv_bias=False, **kwargs)
+        patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3, qkv_bias=False, **kwargs)
     model.default_cfg = default_cfgs['lvvit_base_patch16_224']
     if pretrained:
         load_pretrained(model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3))
     return model
 
-def lvvit_small_patch16_224(pretrained=False, **kwargs):
-    model = VisionTransformer(
-        patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3, qkv_bias=False, **kwargs)
-    model.default_cfg = default_cfgs['lvvit_small_patch16_224']
-    if pretrained:
-        load_pretrained(model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3))
-    return model
+# def lvvit_small_patch16_224(pretrained=False, **kwargs):
+#     model = VisionTransformer(
+#         patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3, qkv_bias=False, **kwargs)
+#     model.default_cfg = default_cfgs['lvvit_small_patch16_224']
+#     if pretrained:
+#         load_pretrained(model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3))
+#     return model
 
-def lvvit_small_patch16_384(pretrained=False, **kwargs):
-    model = VisionTransformer(
-        patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3, qkv_bias=False, img_size=384, **kwargs)
-    model.default_cfg = default_cfgs['lvvit_small_patch16_384']
-    if pretrained:
-        load_pretrained(model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3))
-    return model
+# def lvvit_small_patch16_384(pretrained=False, **kwargs):
+#     model = VisionTransformer(
+#         patch_size=16, embed_dim=384, depth=16, num_heads=6, mlp_ratio=3, qkv_bias=False, img_size=384, **kwargs)
+#     model.default_cfg = default_cfgs['lvvit_small_patch16_384']
+#     if pretrained:
+#         load_pretrained(model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3))
+#     return model
