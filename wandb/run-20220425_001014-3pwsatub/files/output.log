@@ -1,0 +1,22 @@
+Training with a single process on 1 GPUs.
+Model resnet50 created, param count: 23507907
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Traceback (most recent call last):
+  File "train.py", line 846, in <module>
+    main()
+  File "train.py", line 505, in main
+    patch_size=args.patch_size)
+AttributeError: 'Namespace' object has no attribute 'patch_size'
+Traceback (most recent call last):
+  File "train.py", line 846, in <module>
+    main()
+  File "train.py", line 505, in main
+    patch_size=args.patch_size)
+AttributeError: 'Namespace' object has no attribute 'patch_size'

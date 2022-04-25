@@ -1,0 +1,16 @@
+Training with a single process on 1 GPUs.
+Model lsvit created, param count: 25377477
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Train: 0 [   0/233 (  0%)]  Loss: 1.159 (1.16)  Time: 1.735s,    9.22/s  (1.735s,    9.22/s)  LR: 1.000e-04  Data: 0.337 (0.337)
+Train: 0 [  50/233 ( 22%)]  Loss: 0.9036 (1.17)  Time: 0.098s,  164.09/s  (0.129s,  123.82/s)  LR: 1.000e-04  Data: 0.003 (0.009)
+Train: 0 [ 100/233 ( 43%)]  Loss: 1.027 (1.10)  Time: 0.098s,  162.46/s  (0.115s,  139.20/s)  LR: 1.000e-04  Data: 0.002 (0.006)
+Train: 0 [ 150/233 ( 65%)]  Loss: 1.053 (1.08)  Time: 0.103s,  155.15/s  (0.111s,  144.47/s)  LR: 1.000e-04  Data: 0.002 (0.005)
+Train: 0 [ 200/233 ( 86%)]  Loss: 1.019 (1.07)  Time: 0.103s,  154.94/s  (0.109s,  146.95/s)  LR: 1.000e-04  Data: 0.004 (0.004)
+Train: 0 [ 232/233 (100%)]  Loss: 1.048 (1.07)  Time: 0.095s,  168.91/s  (0.108s,  148.11/s)  LR: 1.000e-04  Data: 0.000 (0.004)

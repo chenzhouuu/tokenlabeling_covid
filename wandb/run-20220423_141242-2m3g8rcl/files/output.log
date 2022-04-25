@@ -1,0 +1,46 @@
+Training with a single process on 1 GPUs.
+Model lsvit created, param count: 25377477
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Train: 0 [   0/233 (  0%)]  Loss: 0.9532 (0.953)  Time: 1.422s,   11.25/s  (1.422s,   11.25/s)  LR: 1.000e-04  Data: 0.265 (0.265)
+Train: 0 [  50/233 ( 22%)]  Loss: 0.6561 (0.764)  Time: 0.103s,  154.63/s  (0.124s,  128.98/s)  LR: 1.000e-04  Data: 0.003 (0.007)
+Train: 0 [ 100/233 ( 43%)]  Loss: 0.7046 (0.731)  Time: 0.096s,  166.73/s  (0.112s,  143.11/s)  LR: 1.000e-04  Data: 0.002 (0.005)
+Train: 0 [ 150/233 ( 65%)]  Loss: 0.6788 (0.713)  Time: 0.096s,  166.10/s  (0.108s,  148.78/s)  LR: 1.000e-04  Data: 0.002 (0.004)
+Train: 0 [ 200/233 ( 86%)]  Loss: 0.6931 (0.703)  Time: 0.105s,  151.74/s  (0.105s,  151.77/s)  LR: 1.000e-04  Data: 0.003 (0.004)
+Train: 0 [ 232/233 (100%)]  Loss: 0.6418 (0.696)  Time: 0.093s,  172.14/s  (0.105s,  152.61/s)  LR: 1.000e-04  Data: 0.000 (0.004)
+Test: [   0/58]  Time: 0.209 (0.209)  Loss:  0.4670 (0.4670)  Acc@1: 100.0000 (100.0000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/58]  Time: 0.026 (0.031)  Loss:  1.3105 (0.9347)  Acc@1:  0.0000 (57.1078)  Acc@5: 100.0000 (100.0000)
+Test: [  58/58]  Time: 0.094 (0.031)  Loss:  1.5938 (0.9946)  Acc@1:  0.0000 (50.0000)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/d/output/lsvit/checkpoint-0.pth.tar', 50.0)
+Train: 1 [   0/233 (  0%)]  Loss: 0.7107 (0.711)  Time: 0.351s,   45.56/s  (0.351s,   45.56/s)  LR: 4.000e-04  Data: 0.124 (0.124)
+Train: 1 [  50/233 ( 22%)]  Loss: 0.7161 (0.688)  Time: 0.097s,  164.46/s  (0.104s,  153.27/s)  LR: 4.000e-04  Data: 0.003 (0.005)
+Train: 1 [ 100/233 ( 43%)]  Loss: 0.6407 (0.666)  Time: 0.097s,  165.38/s  (0.102s,  157.57/s)  LR: 4.000e-04  Data: 0.003 (0.004)
+Train: 1 [ 150/233 ( 65%)]  Loss: 0.6102 (0.661)  Time: 0.097s,  164.96/s  (0.100s,  159.58/s)  LR: 4.000e-04  Data: 0.002 (0.003)
+Train: 1 [ 200/233 ( 86%)]  Loss: 0.7007 (0.656)  Time: 0.097s,  164.51/s  (0.100s,  159.78/s)  LR: 4.000e-04  Data: 0.003 (0.003)
+Train: 1 [ 232/233 (100%)]  Loss: 0.7800 (0.651)  Time: 0.091s,  175.72/s  (0.100s,  160.17/s)  LR: 4.000e-04  Data: 0.000 (0.003)
+Test: [   0/58]  Time: 0.091 (0.091)  Loss:  0.4072 (0.4072)  Acc@1: 100.0000 (100.0000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/58]  Time: 0.026 (0.027)  Loss:  1.3105 (0.9121)  Acc@1:  6.2500 (57.2304)  Acc@5: 100.0000 (100.0000)
+Test: [  58/58]  Time: 0.014 (0.027)  Loss:  1.7188 (0.9802)  Acc@1:  0.0000 (50.6438)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/d/output/lsvit/checkpoint-1.pth.tar', 50.64377682403433)
+ ('/mnt/d/output/lsvit/checkpoint-0.pth.tar', 50.0)
+Train: 2 [   0/233 (  0%)]  Loss: 0.5903 (0.590)  Time: 0.432s,   37.06/s  (0.432s,   37.06/s)  LR: 7.000e-04  Data: 0.206 (0.206)
+Train: 2 [  50/233 ( 22%)]  Loss: 0.6322 (0.632)  Time: 0.098s,  164.09/s  (0.109s,  147.38/s)  LR: 7.000e-04  Data: 0.002 (0.006)
+Train: 2 [ 100/233 ( 43%)]  Loss: 0.6468 (0.632)  Time: 0.106s,  150.69/s  (0.104s,  154.02/s)  LR: 7.000e-04  Data: 0.003 (0.005)
+Train: 2 [ 150/233 ( 65%)]  Loss: 0.5834 (0.625)  Time: 0.097s,  165.26/s  (0.102s,  156.33/s)  LR: 7.000e-04  Data: 0.003 (0.004)
+Train: 2 [ 200/233 ( 86%)]  Loss: 0.6343 (0.623)  Time: 0.096s,  167.14/s  (0.102s,  157.46/s)  LR: 7.000e-04  Data: 0.002 (0.004)
+Train: 2 [ 232/233 (100%)]  Loss: 0.5914 (0.626)  Time: 0.093s,  172.21/s  (0.101s,  157.84/s)  LR: 7.000e-04  Data: 0.000 (0.004)
+Test: [   0/58]  Time: 0.089 (0.089)  Loss:  0.4023 (0.4023)  Acc@1: 100.0000 (100.0000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/58]  Time: 0.025 (0.027)  Loss:  1.9326 (0.9465)  Acc@1:  0.0000 (57.1078)  Acc@5: 100.0000 (100.0000)
+Test: [  58/58]  Time: 0.011 (0.026)  Loss:  2.0371 (1.0701)  Acc@1:  0.0000 (50.0000)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/d/output/lsvit/checkpoint-1.pth.tar', 50.64377682403433)
+ ('/mnt/d/output/lsvit/checkpoint-0.pth.tar', 50.0)
+ ('/mnt/d/output/lsvit/checkpoint-2.pth.tar', 50.0)

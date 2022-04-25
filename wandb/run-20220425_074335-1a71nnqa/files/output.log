@@ -1,0 +1,7 @@
+Training with a single process on 1 GPUs.
+Model resnet50 created, param count: 23507907
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)

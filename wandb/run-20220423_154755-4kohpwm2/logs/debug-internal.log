@@ -1,0 +1,5 @@
+2022-04-23 15:48:12,098 INFO    MainThread:8217 [internal.py:wandb_internal():92] W&B internal server running at pid: 8217, started at: 2022-04-23 15:48:12.096871
+2022-04-23 15:48:12,125 INFO    WriterThread:8217 [datastore.py:open_for_write():77] open: /home/zc1995/tokenlabeling_covid/wandb/run-20220423_154755-4kohpwm2/run-4kohpwm2.wandb
+2022-04-23 15:48:12,143 DEBUG   SenderThread:8217 [sender.py:send():235] send: header
+2022-04-23 15:48:12,144 DEBUG   SenderThread:8217 [sender.py:send():235] send: run
+2022-04-23 15:48:13,630 WARNING MainThread:8217 [internal.py:wandb_internal():155] Internal process interrupt: 1

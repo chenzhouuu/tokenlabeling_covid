@@ -20,6 +20,8 @@ from timm.utils import *
 from data import create_dataset, create_loader
 from data import resolve_data_config
 
+import models
+
 has_apex = False
 try:
     from apex import amp
@@ -173,7 +175,8 @@ def validate(args):
 
     criterion = nn.CrossEntropyLoss().cuda()
 
-    dataset = create_dataset(root=args.data, dataset_type=args.split, greyscale=args.greyscale)
+    dataset = create_dataset(root=args.data, dataset_type=args.split, 
+                                    greyscale=args.greyscale)
 
     if args.valid_labels:
         with open(args.valid_labels, 'r') as f:
@@ -199,7 +202,8 @@ def validate(args):
         num_workers=args.workers,
         crop_pct=crop_pct,
         pin_memory=args.pin_mem,
-        tf_preprocessing=args.tf_preprocessing)
+        tf_preprocessing=args.tf_preprocessing,
+        use_mask=False)
 
     batch_time = AverageMeter()
     losses = AverageMeter()

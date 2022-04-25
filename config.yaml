@@ -2,7 +2,7 @@
 tokenlabeling: False
 
 # data path
-data_dir: '/mnt/d/Data/COVID_QU/Infection_Segmentation_Data/Infection_Segmentation_Data'
+data_dir: '/mnt/d/Data/COVID_QU/Lung_Segmentation_Data/Lung_Segmentation_Data'
 # Dataset parameters
 train_split: 'Train'
 val_split: 'Val'
@@ -20,9 +20,10 @@ crop_pct: 0.875
 gp:
 mean: [0.5128]
 std: [0.2236]
-batch_size: 16
+batch_size: 64
 weight_decay: 1e-5
 output: '/mnt/d/output'
 scale: [0.8, 1.0]
-# mask_type: None # 
+# mask_type: lung masks
 patch_size: [16, 16]
+# alpha: 0.5

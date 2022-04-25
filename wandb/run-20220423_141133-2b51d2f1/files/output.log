@@ -1,0 +1,35 @@
+Training with a single process on 1 GPUs.
+Model lsvit created, param count: 25377477
+Data processing configuration for current model + dataset:
+	input_size: (1, 224, 224)
+	interpolation: bicubic
+	mean: (0.5128,)
+	std: (0.2236,)
+	crop_pct: 0.875
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+Train: 0 [   0/233 (  0%)]  Loss: 0.9532 (0.953)  Time: 1.522s,   10.51/s  (1.522s,   10.51/s)  LR: 1.000e-04  Data: 0.262 (0.262)
+Train: 0 [  50/233 ( 22%)]  Loss: 0.6561 (0.764)  Time: 0.100s,  159.84/s  (0.127s,  125.65/s)  LR: 1.000e-04  Data: 0.002 (0.007)
+Train: 0 [ 100/233 ( 43%)]  Loss: 0.7046 (0.731)  Time: 0.096s,  167.32/s  (0.114s,  140.85/s)  LR: 1.000e-04  Data: 0.002 (0.005)
+Train: 0 [ 150/233 ( 65%)]  Loss: 0.6788 (0.713)  Time: 0.099s,  162.40/s  (0.109s,  146.81/s)  LR: 1.000e-04  Data: 0.002 (0.004)
+Train: 0 [ 200/233 ( 86%)]  Loss: 0.6931 (0.703)  Time: 0.104s,  154.47/s  (0.107s,  150.05/s)  LR: 1.000e-04  Data: 0.002 (0.004)
+Train: 0 [ 232/233 (100%)]  Loss: 0.6418 (0.696)  Time: 0.091s,  176.15/s  (0.106s,  151.25/s)  LR: 1.000e-04  Data: 0.000 (0.004)
+Test: [   0/58]  Time: 0.290 (0.290)  Loss:  0.4670 (0.4670)  Acc@1: 100.0000 (100.0000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/58]  Time: 0.025 (0.031)  Loss:  1.3105 (0.9347)  Acc@1:  0.0000 (57.1078)  Acc@5: 100.0000 (100.0000)
+Test: [  58/58]  Time: 0.105 (0.032)  Loss:  1.5938 (0.9946)  Acc@1:  0.0000 (50.0000)  Acc@5: 100.0000 (100.0000)
+Traceback (most recent call last):
+  File "train.py", line 844, in <module>
+    main()
+  File "train.py", line 663, in main
+    best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/utils/checkpoint_saver.py", line 78, in save_checkpoint
+    os.link(last_save_path, save_path)
+FileExistsError: [Errno 17] File exists: '/mnt/d/output/lsvit/last.pth.tar' -> '/mnt/d/output/lsvit/checkpoint-0.pth.tar'
+Traceback (most recent call last):
+  File "train.py", line 844, in <module>
+    main()
+  File "train.py", line 663, in main
+    best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+  File "/home/zc1995/.local/lib/python3.8/site-packages/timm/utils/checkpoint_saver.py", line 78, in save_checkpoint
+    os.link(last_save_path, save_path)
+FileExistsError: [Errno 17] File exists: '/mnt/d/output/lsvit/last.pth.tar' -> '/mnt/d/output/lsvit/checkpoint-0.pth.tar'

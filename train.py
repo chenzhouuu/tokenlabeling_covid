@@ -28,6 +28,7 @@ from timm.utils import ApexScaler, NativeScaler
 from data import create_dataset, create_loader
 from data import resolve_data_config
 import models
+from loss import MaskCrossEntropy
 
 try:
     from apex import amp
@@ -119,6 +120,8 @@ parser.add_argument('--mask-type', type=str, default=None, metavar='N',
                     help='Decide use which mask type')
 parser.add_argument('--mix-token', action='store_true', default=False,
                     help='Using mix token augmentation')
+parser.add_argument('--alpha', type=float, default=0.5, metavar='M',
+                    help='weight of the loss')                    
 # Optimizer parameters
 parser.add_argument('--opt', default='sgd', type=str, metavar='OPTIMIZER',
                     help='Optimizer (default: "sgd"')
@@ -387,6 +390,7 @@ def main():
 
     if args.mix_token and args.mask_type is not None:
         model.mix_token = True
+    
     if args.grad_checkpointing:
         model.set_grad_checkpointing(enable=True)
 
@@ -591,10 +595,13 @@ def main():
             train_loss_fn = BinaryCrossEntropy(smoothing=args.smoothing, target_threshold=args.bce_target_thresh)
         else:
             train_loss_fn = LabelSmoothingCrossEntropy(smoothing=args.smoothing)
+    elif use_mask:
+        train_loss_fn = MaskCrossEntropy(args.alpha)
     else:
         train_loss_fn = nn.CrossEntropyLoss()
     train_loss_fn = train_loss_fn.cuda()
     validate_loss_fn = nn.CrossEntropyLoss().cuda()
+
 
     # setup checkpoint saver and eval metric tracking
     eval_metric = args.eval_metric

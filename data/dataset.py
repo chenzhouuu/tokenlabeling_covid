@@ -105,8 +105,8 @@ class CovidQu(data.Dataset):
                 img, mask = self.transform(img, mask)
 
             scores = get_scores(mask, patch_size=self.patch_size)
-            # target = np.concatenate([np.array([target]), scores])
-            return img, target, scores
+            target = np.concatenate([np.array([target]), scores])
+            return img, target
         else:
             if self.transform is not None:
                 img = self.transform(img)

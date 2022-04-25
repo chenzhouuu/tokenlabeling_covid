@@ -32,6 +32,27 @@ class TokenLabelSoftTargetCrossEntropy(nn.Module):
         loss = torch.sum(-target * F.log_softmax(x, dim=-1), dim=-1)
         return loss.mean()
 
+loss_default = nn.CrossEntropyLoss()
+
+class MaskCrossEntropy(nn.Module):
+    """
+    Mask labeling loss
+    """
+    def __init__(self, alpha=0.5):
+        super(MaskCrossEntropy, self).__init__()
+        self.alpha = alpha
+        assert self.alpha > 0
+    
+    def forward(self, x, target):
+        loss_fn = loss_default
+        loss_cls = loss_fn(x[0], target[:, 0])
+        loss_mask = loss_fn(x[1].reshape(-1, 2), target[:, 1:].reshape(-1))
+
+        return self.alpha * loss_cls + (1 - self.alpha) * loss_mask
+
+
+
+
 class TokenLabelCrossEntropy(nn.Module):
     """
     Token labeling loss.
